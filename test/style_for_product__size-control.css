@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-input-placeholder {
+    color: #878686;
+}
+
+::-moz-placeholder {
+    color: #878686;
+}
+
+:-ms-input-placeholder {
+    color: #878686;
+}
+
+:-moz-placeholder {
+    color: #878686;
+}
+
+::-ms-clear, ::-ms-reveal {
+    display: none;
+}
+
+.product__size-control {
+    position: relative;
+    display: flex;
+    margin: 0 0 16px;
+    padding: 0;
+    background-color: #f1f2f5;
+    border-radius: 100px;
+}
+
+.product__size-control-selector {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    width: 0;
+    height: 100%;
+    transition: -webkit-transform .2s ease-out;
+    transition: transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out;
+    background-color: #fff;
+    border: 1px solid #babfd0;
+    border-radius: 100px;
+}
+
+.product__size-control-item {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    width: 33.33333%;
+    flex-grow: 1;
+}
+
+.product__size-control-label {
+    position: relative;
+    cursor: pointer;
+    border-radius: 100px;
+    border: 1px solid transparent;
+    display: inline-block;
+    height: 28px;
+    width: 100%;
+    color: rgba(55, 53, 53, .7);
+    font-size: 12px;
+    line-height: 26px;
+    font-family: Dodo Medium, Helvetica, Arial, sans-serif;
+    text-align: center;
+    transition: color .2s ease-out;
+}
+
+.product__size-control-label:hover {
+    color: #373535;
+}
+
+.product__size-control-label:focus {
+    outline: 0;
+}
+
+.product__size-control-input {
+    position: absolute;
+    left: -9999px;
+}
+
+.product__size-control-input:checked + .product__size-control-label {
+    color: #373535;
+}
+
+/*! CSS Used from: Embedded */
+input {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+input {
+    line-height: normal;
+}
+
+input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}

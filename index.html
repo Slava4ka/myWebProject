@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style_for_product__size-control.css" rel="stylesheet">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <style>
+
+        html,
+        body,
+        header,
+        .carousel {
+            height: 60vh;
+        }
+
+        @media (max-width: 740px) {
+            html,
+            body,
+            header,
+            .carousel {
+                height: 100vh;
+            }
+
+            @media (min-width: 800px) and (max-width: 850px) {
+                html,
+                body,
+                header,
+                .carousel {
+                    height: 100vh;
+                }
+            }
+        }
+
+    </style>
+</head>
+
+<body id="top">
+<!-- Navbar -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+    <div id="logo" class="container">
+        <a href="#top" class="navbar-brand waves-effect">
+            <img class="nav_logo" src="picture/navv_logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul id="navbarList" class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a href="#Ossetian_pies" class="nav-link waves-effect">Осетинские пироги</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Pizza" class="nav-link waves-effect">Пицца</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Hot_dishes" class="nav-link waves-effect">Горячие блюда</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Grill" class="nav-link waves-effect">Гриль</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#The_drinks" class="nav-link waves-effect">Напитки</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav nav-flex-icons">
+                <li class="nav-item">
+                    <a href="#" class="nav-link waves-effect">
+                        <span class="badge red z-depth-1 mr-1">13</span>
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="clearfix d-none d-sm-inline-block">Корзина</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link waves-effect">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Navbar-->
+
+<!--Slider-->
+<div id="carousel-ex" class="carousel slide carousel-fade pt-4" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li class="active" data-target="#carousel-ex" data-slide-to="0"></li>
+        <li data-target="#carousel-ex" data-slide-to="1"></li>
+        <li data-target="#carousel-ex" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+            <div class="view" style="background-image: url('https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940');
+            background-repeat: no-repeat; background-size:cover;">
+
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="view" style="background-image: url('picture/slider/1111.jpeg');
+            background-repeat: no-repeat; background-size:cover;">
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="view" style="background-image: url('picture/slider/12.jpg');
+            background-repeat: no-repeat; background-size:cover;">
+            </div>
+        </div>
+
+    </div>
+
+    <a href="#carousel-ex" class="carousel-control-prev" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </a>
+    <a href="#carousel-ex" class="carousel-control-next" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </a>
+</div>
+
+<div class="pt-5"></div>
+<!--Slider-->
+
+<!-- net of goods -->
+
+<main>
+
+    <div class="container">
+
+        <div id="Ossetian_pies_Label">
+            <h1>Осетинские пироги</h1>
+        </div>
+
+        <section id="Ossetian_pies" class="text-center mb-4 mt-5">
+            <div id="piesLineCart" class="row wow fadeIn">
+
+
+                <div class="col-lg-3 col-md-6 md-4 mb-4">
+                    <div class="card border-0">
+                        <div class="view overlay">
+                            <img class="card-img-top"
+                                 src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/d01e4bd4-1a1d-4ba4-a4af-20b15283166c.jpg"
+                                 alt="example">
+                            <div class="text-left"><i class="fas fa-info-circle"></i></div>
+                            <a href="#">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body text-center pt-0">
+                            <h4 class="good_name">Чизбургер-пицца</h4>
+                            <div class="good_info">
+                                <h6>
+                                    <a class="dark-grey-text">Соус бургер, мясной соус болоньезе, красный лук,
+                                        моцарелла,
+                                        томаты и соленые огурчики</a>
+                                </h6>
+                            </div>
+                            <!-- scrrrrrr -->
+                            <div class="product__size-control">
+                                <div class="product__size-control-selector"></div>
+                                <div class="product__size-control-item active" value="маленький">
+                                    <h5 class="selected_item mt-1">35&nbsp;см</h5>
+                                </div>
+                                <div class="product__size-control-item" value="большой">
+                                    <h5 class="not_selected_item mt-2">25&nbsp;см</h5>
+                                </div>
+                            </div>
+                            <!-- scrrrr -->
+
+                            <!-- див с кнопкой в корзина и ценой -->
+
+                            <div class="row d-flex justify-content-between align-items-center">
+                                <div class="col-5">
+                                    <h4 class="font-weight-bold blue-text price">
+                                        <strong>500₽</strong>
+                                    </h4>
+                                </div>
+
+                                <div class="col-7">
+                                    <button type="button" class="btn btn-outline-warning btn-tb"
+                                            style="webkit-box-shadow: none; box-shadow: none">
+                                    <span>
+                                        <strong>В&nbsp;корзину</strong>
+                                    </span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- див с кнопкой в корзина и ценой -->
+
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    $(document).ready(function () {
+                        for (var i = 0; i < arrPies.length; i++)
+                            $("#piesLineCart").append("<div class=\"col-lg-3 col-md-6 md-4 mb-4\">\n" +
+                                "                    <div class=\"card border-0\">\n" +
+                                "                        <div class=\"view overlay\">\n" +
+                                "                            <img class=\"card-img-top\"\n" +
+                                "                                 src="+arrPies[i].picture+"\n" +
+                                "                                 alt=\"example\">\n" +
+                                "                            <div class=\"text-left\"><i class=\"fas fa-info-circle\"></i></div>\n" +
+                                "                            <a href=\"#\">\n" +
+                                "                                <div class=\"mask rgba-white-slight\"></div>\n" +
+                                "                            </a>\n" +
+                                "                        </div>\n" +
+                                "                        <div class=\"card-body text-center pt-0\">\n" +
+                                "                            <h4 class=\"good_name\">"+arrPies[i].name+"</h4>\n" +
+                                "                            <div class=\"good_info\">\n" +
+                                "                                <h6>\n" +
+                                "                                    <a class=\"dark-grey-text\">"+arrPies[i].description+"</a>\n" +
+                                "                                </h6>\n" +
+                                "                            </div>\n" +
+                                "                            <!-- scrrrrrr -->\n" +
+                                "                            <div class=\"product__size-control\">\n" +
+                                "                                <div class=\"product__size-control-selector\"></div>\n" +
+                                "                                <div class=\"product__size-control-item active\" value=\"маленький\">\n" +
+                                "                                    <h5 class=\"selected_item mt-1\">900&nbsp;гр</h5>\n" +
+                                "                                </div>\n" +
+                                "                                <div class=\"product__size-control-item\" value=\"большой\">\n" +
+                                "                                    <h5 class=\"not_selected_item mt-2\">280&nbsp;гр</h5>\n" +
+                                "                                </div>\n" +
+                                "                            </div>\n" +
+                                "                            <!-- scrrrr -->\n" +
+                                "\n" +
+                                "                            <!-- див с кнопкой в корзина и ценой -->\n" +
+                                "\n" +
+                                "                            <div class=\"row d-flex justify-content-between align-items-center\">\n" +
+                                "                                <div class=\"col-5\">\n" +
+                                "                                    <h4 class=\"font-weight-bold blue-text price\">\n" +
+                                "                                        <strong>"+arrPies[i].price_big+"₽</strong>\n" +
+                                "                                    </h4>\n" +
+                                "                                </div>\n" +
+                                "\n" +
+                                "                                <div class=\"col-7\">\n" +
+                                "                                    <button type=\"button\" class=\"btn btn-outline-warning btn-tb\"\n" +
+                                "                                            style=\"webkit-box-shadow: none; box-shadow: none\">\n" +
+                                "                                    <span>\n" +
+                                "                                        <strong>В&nbsp;корзину</strong>\n" +
+                                "                                    </span>\n" +
+                                "                                    </button>\n" +
+                                "                                </div>\n" +
+                                "                            </div>\n" +
+                                "\n" +
+                                "                            <!-- див с кнопкой в корзина и ценой -->\n" +
+                                "\n" +
+                                "                        </div>\n" +
+                                "                    </div>\n" +
+                                "                </div>");
+                    });
+                </script>
+
+            </div>
+        </section>
+
+        <div id="Pizza_Label">
+            <h1>Пицца</h1>
+        </div>
+
+        <section id="Pizza" class="text-center mb-4 mt-5">
+            <div id="pizzaLineCart" class="row wow fadeIn">
+
+                <script>
+                    $(document).ready(function () {
+                        for (var i = 0; i < 3; i++)
+                            $("#pizzaLineCart").append("                <div class=\"col-lg-3 col-md-6 md-4 mb-4\">\n" +
+                                "                    <div class=\"card border-0\">\n" +
+                                "                        <div class=\"view overlay\">\n" +
+                                "                            <img class=\"card-img-top\"\n" +
+                                "                                 src=\"https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/d01e4bd4-1a1d-4ba4-a4af-20b15283166c.jpg\"\n" +
+                                "                                 alt=\"example\">\n" +
+                                "                            <div class=\"text-left\"><i class=\"fas fa-info-circle\"></i></div>\n" +
+                                "                            <a href=\"#\">\n" +
+                                "                                <div class=\"mask rgba-white-slight\"></div>\n" +
+                                "                            </a>\n" +
+                                "                        </div>\n" +
+                                "                        <div class=\"card-body text-center pt-0\">\n" +
+                                "                            <h4 class=\"good_name\">Чизбургер-пицца</h4>\n" +
+                                "                            <div class=\"good_info\">\n" +
+                                "                                <h6>\n" +
+                                "                                    <a class=\"dark-grey-text\">Соус бургер, мясной соус болоньезе, красный лук,\n" +
+                                "                                        моцарелла,\n" +
+                                "                                        томаты и соленые огурчики</a>\n" +
+                                "                                </h6>\n" +
+                                "                            </div>\n" +
+                                "                            <!-- scrrrrrr -->\n" +
+                                "                            <div class=\"product__size-control\">\n" +
+                                "                                <div class=\"product__size-control-selector\"></div>\n" +
+                                "                                <div class=\"product__size-control-item active\" value=\"маленький\">\n" +
+                                "                                    <h5 class=\"mt-1\">35&nbsp;см</h5>\n" +
+                                "                                </div>\n" +
+                                "                                <div class=\"product__size-control-item\" value=\"большой\">\n" +
+                                "                                    <h6 class=\"mt-2\">25&nbsp;см</h6>\n" +
+                                "                                </div>\n" +
+                                "                            </div>\n" +
+                                "                            <!-- scrrrr -->\n" +
+                                "\n" +
+                                "                            <!-- див с кнопкой в корзина и ценой -->\n" +
+                                "\n" +
+                                "                            <div class=\"row d-flex justify-content-between align-items-center\">\n" +
+                                "                                <div class=\"col-5\">\n" +
+                                "                                    <h4 class=\"font-weight-bold blue-text\">\n" +
+                                "                                        <strong>500₽</strong>\n" +
+                                "                                    </h4>\n" +
+                                "                                </div>\n" +
+                                "\n" +
+                                "                                <div class=\"col-7\">\n" +
+                                "                                    <button type=\"button\" class=\"btn btn-outline-warning btn-tb\"\n" +
+                                "                                            style=\"webkit-box-shadow: none; box-shadow: none\">\n" +
+                                "                                    <span>\n" +
+                                "                                        <strong>В&nbsp;корзину</strong>\n" +
+                                "                                    </span>\n" +
+                                "                                    </button>\n" +
+                                "                                </div>\n" +
+                                "                            </div>\n" +
+                                "\n" +
+                                "                            <!-- див с кнопкой в корзина и ценой -->\n" +
+                                "\n" +
+                                "                        </div>\n" +
+                                "                    </div>\n" +
+                                "                </div>");
+                    });
+                </script>
+
+            </div>
+        </section>
+
+        <div id="Hot_dishes_Label">
+            <h1>Горячие блюда</h1>
+        </div>
+
+        <section id="Hot_dishes" class="text-center mb-4 mt-5">
+            <div id="hot_dishesLineCart" class="row wow fadeIn">
+
+                <script>
+                    $(document).ready(function () {
+                        for (var i = 0; i < 3; i++)
+                            $("#hot_dishesLineCart").append("<div class=\"col-lg-3 col-md-6 md-4 mb-4\">\n" +
+                                "    <div class=\"card border-0\">\n" +
+                                "        <div class=\"view overlay\">\n" +
+                                "            <img class=\"card-img-top\"\n" +
+                                "                 src=\"https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/d01e4bd4-1a1d-4ba4-a4af-20b15283166c.jpg\"\n" +
+                                "                 alt=\"example\">\n" +
+                                "            <div class=\"text-left\"><i class=\"fas fa-info-circle\"></i></div>\n" +
+                                "            <a href=\"#\">\n" +
+                                "                <div class=\"mask rgba-white-slight\"></div>\n" +
+                                "            </a>\n" +
+                                "        </div>\n" +
+                                "        <div class=\"card-body text-center pt-0\">\n" +
+                                "            <h4 class=\"good_name\">Чизбургер-пицца</h4>\n" +
+                                "            <div class=\"good_info\">\n" +
+                                "                <h6>\n" +
+                                "                    <a class=\"dark-grey-text\">Соус бургер, мясной соус болоньезе, красный лук,\n" +
+                                "                        моцарелла,\n" +
+                                "                        томаты и соленые огурчики</a>\n" +
+                                "                </h6>\n" +
+                                "            </div>\n" +
+                                "            <!-- scrrrrrr -->\n" +
+                                "\n" +
+                                "            <div class=\"product__size-control\">\n" +
+                                "                <div class=\"product__size-control-selector\"\n" +
+                                "                     style=\"width: 50%; transform: translateX(0%);\"></div>\n" +
+                                "\n" +
+                                "                <div class=\"product__size-control-item\"><input type=\"radio\"\n" +
+                                "                                                               class=\"product__size-control-input\"\n" +
+                                "                                                               id=\"size_20_3\" name=\"size_20\" value=\"3\">\n" +
+                                "                    <label class=\"product__size-control-label product__size-control-label_3\"\n" +
+                                "                           data-testid=\"menu__pizza_size_3\" for=\"size_20_3\">\n" +
+                                "                        <h5 class=\"mt-1\">35&nbsp;см</h5>\n" +
+                                "                    </label>\n" +
+                                "                </div>\n" +
+                                "\n" +
+                                "                <div class=\"product__size-control-item\"><input type=\"radio\"\n" +
+                                "                                                               class=\"product__size-control-input\"\n" +
+                                "                                                               id=\"size_20_2\" name=\"size_20\" value=\"2\">\n" +
+                                "                    <label class=\"product__size-control-label product__size-control-label_2\"\n" +
+                                "                           data-testid=\"menu__pizza_size_2\" for=\"size_20_2\">\n" +
+                                "                        <h5 class=\"mt-1\">\n" +
+                                "                            30&nbsp;\n" +
+                                "                        </h5>\n" +
+                                "                    </label>\n" +
+                                "                </div>\n" +
+                                "            </div>\n" +
+                                "            <!-- scrrrr -->\n" +
+                                "\n" +
+                                "            <!-- див с кнопкой в корзина и ценой -->\n" +
+                                "\n" +
+                                "            <div class=\"row d-flex justify-content-between align-items-center\">\n" +
+                                "                <div class=\"col-5\">\n" +
+                                "                    <h4 class=\"font-weight-bold blue-text\">\n" +
+                                "                        <strong>500₽</strong>\n" +
+                                "                    </h4>\n" +
+                                "                </div>\n" +
+                                "\n" +
+                                "                <div class=\"col-7\">\n" +
+                                "                    <button type=\"button\" class=\"btn btn-outline-warning btn-tb\"\n" +
+                                "                            style=\"webkit-box-shadow: none; box-shadow: none\">\n" +
+                                "                                    <span>\n" +
+                                "                                        <strong>В&nbsp;корзину</strong>\n" +
+                                "                                    </span>\n" +
+                                "                    </button>\n" +
+                                "                </div>\n" +
+                                "            </div>\n" +
+                                "\n" +
+                                "            <!-- див с кнопкой в корзина и ценой -->\n" +
+                                "\n" +
+                                "        </div>\n" +
+                                "    </div>\n" +
+                                "</div>");
+                    });
+                </script>
+
+            </div>
+        </section>
+
+        <div id="Grill_Label">
+            <h1>Гриль</h1>
+        </div>
+
+        <section id="Grill" class="text-center mb-4 mt-5">
+            <div id="grillLineCart" class="row wow fadeIn">
+
+                <script>
+                    $(document).ready(function () {
+                        for (var i = 0; i < 6; i++)
+                            $("#grillLineCart").append("                <div class=\"col-lg-3 col-md-6 md-4 mb-4\">\n" +
+                                "                    <div class=\"card border-0\">\n" +
+                                "                        <div class=\"view overlay\">\n" +
+                                "                            <img class=\"card-img-top\"\n" +
+                                "                                 src=\"https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/d01e4bd4-1a1d-4ba4-a4af-20b15283166c.jpg\"\n" +
+                                "                                 alt=\"example\">\n" +
+                                "                            <div class=\"text-left\"><i class=\"fas fa-info-circle\"></i></div>\n" +
+                                "                            <a href=\"#\">\n" +
+                                "                                <div class=\"mask rgba-white-slight\"></div>\n" +
+                                "                            </a>\n" +
+                                "                        </div>\n" +
+                                "                        <div class=\"card-body text-center pt-0\">\n" +
+                                "                            <h4 class=\"good_name\">Чизбургер-пицца</h4>\n" +
+                                "                            <div class=\"good_info\">\n" +
+                                "                                <h6>\n" +
+                                "                                    <a class=\"dark-grey-text\">Соус бургер, мясной соус болоньезе, красный лук,\n" +
+                                "                                        моцарелла,\n" +
+                                "                                        томаты и соленые огурчики</a>\n" +
+                                "                                </h6>\n" +
+                                "                            </div>\n" +
+                                "                            <!-- scrrrrrr -->\n" +
+                                "                            <div class=\"product__size-control\">\n" +
+                                "                                <div class=\"product__size-control-selector\"></div>\n" +
+                                "                                <div class=\"product__size-control-item active\" value=\"маленький\">\n" +
+                                "                                    <h5 class=\"mt-1\">35&nbsp;см</h5>\n" +
+                                "                                </div>\n" +
+                                "                                <div class=\"product__size-control-item\" value=\"большой\">\n" +
+                                "                                    <h6 class=\"mt-2\">25&nbsp;см</h6>\n" +
+                                "                                </div>\n" +
+                                "                            </div>\n" +
+                                "                            <!-- scrrrr -->\n" +
+                                "\n" +
+                                "                            <!-- див с кнопкой в корзина и ценой -->\n" +
+                                "\n" +
+                                "                            <div class=\"row d-flex justify-content-between align-items-center\">\n" +
+                                "                                <div class=\"col-5\">\n" +
+                                "                                    <h4 class=\"font-weight-bold blue-text\">\n" +
+                                "                                        <strong>500₽</strong>\n" +
+                                "                                    </h4>\n" +
+                                "                                </div>\n" +
+                                "\n" +
+                                "                                <div class=\"col-7\">\n" +
+                                "                                    <button type=\"button\" class=\"btn btn-outline-warning btn-tb\"\n" +
+                                "                                            style=\"webkit-box-shadow: none; box-shadow: none\">\n" +
+                                "                                    <span>\n" +
+                                "                                        <strong>В&nbsp;корзину</strong>\n" +
+                                "                                    </span>\n" +
+                                "                                    </button>\n" +
+                                "                                </div>\n" +
+                                "                            </div>\n" +
+                                "\n" +
+                                "                            <!-- див с кнопкой в корзина и ценой -->\n" +
+                                "\n" +
+                                "                        </div>\n" +
+                                "                    </div>\n" +
+                                "                </div>");
+                    });
+                </script>
+
+            </div>
+        </section>
+
+        <div id="The_drinks_Label">
+            <h1>Напитки</h1>
+        </div>
+
+        <section id="The_drinks" class="text-center mb-4 mt-5">
+            <div id="the_drinksLineCart" class="row wow fadeIn">
+
+                <script>
+                    $(document).ready(function () {
+                        for (var i = 0; i < 2; i++)
+                            $("#the_drinksLineCart").append("                <div class=\"col-lg-3 col-md-6 md-4 mb-4\">\n" +
+                                "                    <div class=\"card border-0\">\n" +
+                                "                        <div class=\"view overlay\">\n" +
+                                "                            <img class=\"card-img-top\"\n" +
+                                "                                 src=\"https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/d01e4bd4-1a1d-4ba4-a4af-20b15283166c.jpg\"\n" +
+                                "                                 alt=\"example\">\n" +
+                                "                            <div class=\"text-left\"><i class=\"fas fa-info-circle\"></i></div>\n" +
+                                "                            <a href=\"#\">\n" +
+                                "                                <div class=\"mask rgba-white-slight\"></div>\n" +
+                                "                            </a>\n" +
+                                "                        </div>\n" +
+                                "                        <div class=\"card-body text-center pt-0\">\n" +
+                                "                            <h4 class=\"good_name\">Чизбургер-пицца</h4>\n" +
+                                "                            <div class=\"good_info\">\n" +
+                                "                                <h6>\n" +
+                                "                                    <a class=\"dark-grey-text\">Соус бургер, мясной соус болоньезе, красный лук,\n" +
+                                "                                        моцарелла,\n" +
+                                "                                        томаты и соленые огурчики</a>\n" +
+                                "                                </h6>\n" +
+                                "                            </div>\n" +
+                                "                            <!-- scrrrrrr -->\n" +
+                                "                            <div class=\"product__size-control\">\n" +
+                                "                                <div class=\"product__size-control-selector\"></div>\n" +
+                                "                                <div class=\"product__size-control-item active\" value=\"маленький\">\n" +
+                                "                                    <h5 class=\"mt-1\">35&nbsp;см</h5>\n" +
+                                "                                </div>\n" +
+                                "                                <div class=\"product__size-control-item\" value=\"большой\">\n" +
+                                "                                    <h6 class=\"mt-2\">25&nbsp;см</h6>\n" +
+                                "                                </div>\n" +
+                                "                            </div>\n" +
+                                "                            <!-- scrrrr -->\n" +
+                                "\n" +
+                                "                            <!-- див с кнопкой в корзина и ценой -->\n" +
+                                "\n" +
+                                "                            <div class=\"row d-flex justify-content-between align-items-center\">\n" +
+                                "                                <div class=\"col-5\">\n" +
+                                "                                    <h4 class=\"font-weight-bold blue-text\">\n" +
+                                "                                        <strong>500₽</strong>\n" +
+                                "                                    </h4>\n" +
+                                "                                </div>\n" +
+                                "\n" +
+                                "                                <div class=\"col-7\">\n" +
+                                "                                    <button type=\"button\" class=\"btn btn-outline-warning btn-tb\"\n" +
+                                "                                            style=\"webkit-box-shadow: none; box-shadow: none\">\n" +
+                                "                                    <span>\n" +
+                                "                                        <strong>В&nbsp;корзину</strong>\n" +
+                                "                                    </span>\n" +
+                                "                                    </button>\n" +
+                                "                                </div>\n" +
+                                "                            </div>\n" +
+                                "\n" +
+                                "                            <!-- див с кнопкой в корзина и ценой -->\n" +
+                                "\n" +
+                                "                        </div>\n" +
+                                "                    </div>\n" +
+                                "                </div>");
+                    });
+                </script>
+            </div>
+
+        </section>
+
+    </div>
+</main>
+<!-- net of goods -->
+
+<footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+    <div class="pt-4">
+        <a href="#" role="button" class="btn btn-outline-white">WDB
+            <i class="fa fa-graduation-cap ml-2"></i></a>
+
+        <a href="#" role="button" class="btn btn-outline-white">Online shop
+            <i class="fa fa-graduation-cap ml-2"></i></a>
+    </div>
+
+    <hr class="my-4">
+    <div class="pb-4">
+        <a href="#">
+            <i class="fa fa-facebook mr-3"></i>
+        </a>
+        <a href="#">
+            <i class="fa fa-twitter mr-3"></i>
+        </a>
+        <a href="#">
+            <i class="fa fa-youtube mr-3"></i>
+        </a>
+        <a href="#">
+            <i class="fa fa-google-plus mr-3"></i>
+        </a>
+        <a href="#">
+            <i class="fa fa-dribbble mr-3"></i>
+        </a>
+        <a href="#">
+            <i class="fa fa-pinterest mr-3"></i>
+        </a>
+        <a href="#">
+            <i class="fa fa-github mr-3"></i>
+        </a>
+        <a href="#">
+            <i class="fa fa-vk mr-3"></i>
+        </a>
+    </div>
+
+    <div class="footer-copyright py-3">
+        Web Developer
+    </div>
+
+</footer>
+
+<!-- SCRIPTS -->
+<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" src="js/tempData.js"></script>
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>

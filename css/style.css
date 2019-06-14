@@ -1,0 +1,62 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+html,
+body,
+.view {
+    height: 100%;
+}
+
+.carousel {
+    height: 50%;
+}
+
+.carousel .carousel-inner {
+    height: 100%;
+}
+
+.carousel .carousel-inner .carousel-item,
+.carousel .carousel-inner .active {
+    height: 100%;
+}
+
+@media (max-width: 776px) {
+    .carousel {
+        height: 100%;
+    }
+}
+
+.page-footer {
+    background-color: #929fba;
+}
+
+.nav_logo {
+    width: 40px;
+    height: auto;
+    border: none;
+}
+
+h1, h4, h5, h6 {
+    font-family: Comic Sans MS, Medium, Helvetica, Arial, sans-serif;
+}
+
+.selected_item {
+    font-family: Comic Sans MS, Medium, Helvetica, Arial, sans-serif;
+    font-size: 1.25rem;
+}
+
+.not_selected_item {
+    font-family: Comic Sans MS, Medium, Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.good_info {
+    height: 100px;
+}
+
+.good_name {
+    height: 50px;
+}
+
+.headline {
+    padding-bottom: 50px;
+}
