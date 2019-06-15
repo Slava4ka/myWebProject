@@ -36,7 +36,7 @@ $(document).ready(function () {
     });
 
     $('.product__size-control-item').on('click', function () {
-       // переключение размера товара
+        // переключение размера товара
         const i = $(this).parent().find('.product__size-control-item').index($(this));
         //Среди найденных классов у родителя кликнутого... находим индекс кликнутого элемента.
         console.clear();
@@ -59,6 +59,20 @@ $(document).ready(function () {
 
     });
 
+    tippy('#cart', {
+        content: '' +
+            '<div class="card tooltip_card">\n' +
+            '  <img class="card-img-top tooltip_img mt-4" src="picture/empty_box.png" alt="Card image cap">\n' +
+            '  <div class="card-body">\n' +
+            '    <h5 class="card-title">Корзина пуста</h5>\n' +
+            '    <p class="card-text">Мы доставим ваш заказ бесплатно при покупке от 1000₽</p>\n' +
+            '  </div>\n' +
+            '</div>',
+        theme: 'light-border',
+        interactive: true,
+        animateFill: false,
+        animation: 'scale'
+    });
 
 });
 

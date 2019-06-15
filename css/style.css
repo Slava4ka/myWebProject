@@ -39,10 +39,36 @@ h1, h4, h5, h6 {
     font-family: Comic Sans MS, Medium, Helvetica, Arial, sans-serif;
 }
 
+.telephone_number {
+    font-family: Comic Sans MS, Medium, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
 .selected_item {
     font-family: Comic Sans MS, Medium, Helvetica, Arial, sans-serif;
     font-size: 1.25rem;
 }
+
+.tooltip_img {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tippy-tooltip {
+    padding: 0;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 8px;
+}
+
+.tooltip_card {
+    border-style: solid;
+    border-color: #4f4f4f;
+    border-width: 2px;
+    border-radius: 8px;
+}
+
 
 .not_selected_item {
     font-family: Comic Sans MS, Medium, Helvetica, Arial, sans-serif;

@@ -16,6 +16,8 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style_for_product__size-control.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@4/themes/light-border.css"/>
+
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <style>
@@ -53,7 +55,7 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
     <div id="logo" class="container">
         <a href="#top" class="navbar-brand waves-effect">
-            <img class="nav_logo" src="picture/navv_logo.png" alt="">
+            <img class="nav_logo wow jackInTheBox" src="picture/navv_logo.png" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
                 aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,7 +63,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarContent">
             <ul id="navbarList" class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a href="#Ossetian_pies" class="nav-link waves-effect">Осетинские пироги</a>
                 </li>
                 <li class="nav-item">
@@ -76,10 +78,20 @@
                 <li class="nav-item">
                     <a href="#The_drinks" class="nav-link waves-effect">Напитки</a>
                 </li>
+                <li class="nav-item service">
+                    <a href="" class="nav-link waves-effect">Доставка</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link waves-effect">О нас</a>
+                </li>
             </ul>
 
+            <div class="telephone_number mr-5">
+                <h2>2-29-68-87</h2>
+            </div>
+
             <ul class="navbar-nav nav-flex-icons">
-                <li class="nav-item">
+                <li id="cart" class="nav-item">
                     <a href="#" class="nav-link waves-effect">
                         <span class="badge red z-depth-1 mr-1">13</span>
                         <i class="fa fa-shopping-cart"></i>
@@ -89,7 +101,7 @@
 
                 <li class="nav-item">
                     <a href="#" class="nav-link waves-effect">
-                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-instagram fa-2x"></i>
                     </a>
                 </li>
             </ul>
@@ -217,7 +229,7 @@
                                 "                    <div class=\"card border-0\">\n" +
                                 "                        <div class=\"view overlay\">\n" +
                                 "                            <img class=\"card-img-top\"\n" +
-                                "                                 src="+arrPies[i].picture+"\n" +
+                                "                                 src=" + arrPies[i].picture + "\n" +
                                 "                                 alt=\"example\">\n" +
                                 "                            <div class=\"text-left\"><i class=\"fas fa-info-circle\"></i></div>\n" +
                                 "                            <a href=\"#\">\n" +
@@ -225,10 +237,10 @@
                                 "                            </a>\n" +
                                 "                        </div>\n" +
                                 "                        <div class=\"card-body text-center pt-0\">\n" +
-                                "                            <h4 class=\"good_name\">"+arrPies[i].name+"</h4>\n" +
+                                "                            <h4 class=\"good_name\">" + arrPies[i].name + "</h4>\n" +
                                 "                            <div class=\"good_info\">\n" +
                                 "                                <h6>\n" +
-                                "                                    <a class=\"dark-grey-text\">"+arrPies[i].description+"</a>\n" +
+                                "                                    <a class=\"dark-grey-text\">" + arrPies[i].description + "</a>\n" +
                                 "                                </h6>\n" +
                                 "                            </div>\n" +
                                 "                            <!-- scrrrrrr -->\n" +
@@ -248,7 +260,7 @@
                                 "                            <div class=\"row d-flex justify-content-between align-items-center\">\n" +
                                 "                                <div class=\"col-5\">\n" +
                                 "                                    <h4 class=\"font-weight-bold blue-text price\">\n" +
-                                "                                        <strong>"+arrPies[i].price_big+"₽</strong>\n" +
+                                "                                        <strong>" + arrPies[i].price_big + "₽</strong>\n" +
                                 "                                    </h4>\n" +
                                 "                                </div>\n" +
                                 "\n" +
@@ -628,6 +640,14 @@
 <!-- SCRIPTS -->
 <script type="text/javascript" src="js/scripts.js"></script>
 <script type="text/javascript" src="js/tempData.js"></script>
+
+<script type="text/javascript" src="js/modules/wow.js"></script>
+<script>WOW().init();</script>
+
+
+<script src="https://unpkg.com/popper.js@1"></script>
+<script src="https://unpkg.com/tippy.js@4"></script>
+
 <!-- JQuery -->
 <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 <!-- Bootstrap tooltips -->
