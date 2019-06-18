@@ -1,5 +1,8 @@
 $(document).ready(function () {
 
+    //слушатель на кнопку КОРЗИНА
+    $('button.add-to-cart').on('click', addToCart);
+
     $('#navbarList li a, #logo a').on("click", function (event) {
         //прокрутка до якоря (раздела товаров)
         event.preventDefault();
@@ -27,7 +30,7 @@ $(document).ready(function () {
             }
 
             if ($(window).scrollTop() < 200) {
-                $('#navbarList li').removeClass('active')
+                $('#navbarList li').removeClass('active');
                 console.log("$('#navbarList li a').removeClass('active')");
             }
 
@@ -59,6 +62,7 @@ $(document).ready(function () {
 
     });
 
+    //выпадающее окно с корзиной
     tippy('#cart', {
         content: '' +
             '<div class="card tooltip_card">\n' +
@@ -76,8 +80,62 @@ $(document).ready(function () {
 
 });
 
+function checlLocalStorage(articul) {
+// проверяет наличие переданной позициии в LS
+    if (localStorage.getItem('cart') != null) {
+        const cart = getFromLS();
+        return cart[articul] !== undefined
+    } else {
+        return false
+    }
+}
 
+function addToLS(cart) {
+    // Добавление в LS
+    localStorage.setItem('cart', JSON.stringify(cart));
+    console.log(cart);
+    console.log("Данные добавлены");
+}
 
+function getFromLS() {
+    // Забрать из LS
+    const fromLs = JSON.parse(localStorage.getItem('cart'));
+    console.log(fromLs);
+    if (fromLs === undefined || fromLs === null) {
+        return {}
+    } else {
+        return fromLs
+    }
+}
+
+// так как я не использую глобальных переменных - нужно каждый раз доставать весь массив из LS добалять туда новую позицию
+// и записывать его заного. Так как операция SetItem перезаписывает данные.
+
+function addToCart() {
+// Добавляет товар в корзину
+    let articul = $(this).attr('data-art');
+    let size = $(this).parent().parent().siblings('.product__size-control').find('.active').attr('value');
+    if (articul !== undefined && size !== undefined) {
+        let cart = getFromLS();
+
+        if (checlLocalStorage(articul)) {
+
+            if (size === 'big') cart[articul].big++;
+            if (size === 'small')cart[articul].small++;
+
+        } else {
+            // Если такой позиции нет в LS
+
+            if (size === 'big') cart[articul] = {big: 1, small: 0};
+            if (size === 'small')cart[articul] = {big: 0, small: 1};
+        }
+
+        addToLS(cart);
+    } else {
+        alert("какая то хуета");
+    }
+
+}
 
 
 
