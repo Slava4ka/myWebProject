@@ -12,9 +12,11 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
+
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style_for_product__size-control.css" rel="stylesheet">
+    <link href="css/tippleCart.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@4/themes/light-border.css"/>
 
@@ -54,7 +56,7 @@
 <!-- Navbar -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
     <div id="logo" class="container">
-        <a href="#top" class="navbar-brand waves-effect">
+        <a href="#top" class="navbar-brand waves-effect anchor">
             <img class="nav_logo wow jackInTheBox" src="picture/navv_logo.png" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
@@ -64,19 +66,19 @@
         <div class="collapse navbar-collapse" id="navbarContent">
             <ul id="navbarList" class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a href="#Ossetian_pies" class="nav-link waves-effect">Осетинские пироги</a>
+                    <a href="#Ossetian_pies" class="nav-link waves-effect anchor">Осетинские пироги</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#Pizza" class="nav-link waves-effect">Пицца</a>
+                    <a href="#Pizza" class="nav-link waves-effect anchor">Пицца</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#Hot_dishes" class="nav-link waves-effect">Горячие блюда</a>
+                    <a href="#Hot_dishes" class="nav-link waves-effect anchor">Горячие блюда</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#Grill" class="nav-link waves-effect">Гриль</a>
+                    <a href="#Grill" class="nav-link waves-effect anchor">Гриль</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#The_drinks" class="nav-link waves-effect">Напитки</a>
+                    <a href="#The_drinks" class="nav-link waves-effect anchor">Напитки</a>
                 </li>
                 <li class="nav-item service">
                     <a href="" class="nav-link waves-effect">Доставка</a>
@@ -93,7 +95,9 @@
             <ul class="navbar-nav nav-flex-icons">
                 <li id="cart" class="nav-item">
                     <a href="#" class="nav-link waves-effect">
-                        <span class="badge red z-depth-1 mr-1">13</span>
+                        <span id="card-value" class="badge red z-depth-1 mr-1">
+                            <!--заполняется скриптом setTotalCardValue-->
+                        </span>
                         <i class="fa fa-shopping-cart"></i>
                         <span class="clearfix d-none d-sm-inline-block">Корзина</span>
                     </a>
@@ -209,7 +213,7 @@
                                 "                                <div class=\"col-7\">\n" +
                                 "                                    <button type=\"button\" class=\"btn btn-outline-warning btn-tb add-to-cart\"\n" +
                                 "data-art=\"" + arrPies[i].id + "\"\n" +
-                                "                                            style=\"webkit-box-shadow: none; box-shadow: none\">\n" +
+                                "                                            >\n" +
                                 "                                    <span>\n" +
                                 "                                        <strong>В&nbsp;корзину</strong>\n" +
                                 "                                    </span>\n" +
@@ -581,11 +585,12 @@
 </footer>
 
 <!-- SCRIPTS -->
+<script type="text/javascript" src="js/stringСreation.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script>
 <script type="text/javascript" src="js/tempData.js"></script>
 
 <script type="text/javascript" src="js/modules/wow.js"></script>
-<script>WOW().init();</script>
+<script>//WOW().init();</script>
 
 
 <script src="https://unpkg.com/popper.js@1"></script>

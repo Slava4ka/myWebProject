@@ -1,0 +1,18 @@
+isEmpty(obj) - проверяет длину объекта(ассоциотивного массива). Возвращает true(если длина = 0) /false (else).
+
+getFromLS()  - выгружает все данные из Locale Storage, card
+
+addToLS(cart) - загрузает данные в Locale Storage, card
+
+checlLocalStorage(articul) - проверяет наличие переданной позициии в LS. Возвращает true/false.
+
+addToCart() - добавляет единицу товара в корзину
+
+plusGoods() - добавить единицу товара
+minusGoods() - отнять единицу товара
+
+setTotalCardValue() - считает и выводит общее количество товаров в корзине
+
+changeMiniCart() - меняет содержимое Tippy окна
+
+createMiniCart() - создает Tippy окно
