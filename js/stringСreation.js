@@ -130,7 +130,7 @@ function plusGoods(address) {
     const id = $(address).parent().parent().parent().attr('data-art');
     const diameter = $(address).parent().parent().siblings('.size').attr('data-art');
     let size = '';
-    if (diameter == 330) {
+    if (diameter == 280) {
         size = 'small';
     } else {
         size = 'big';
@@ -170,7 +170,7 @@ function minusGoods(address) {
     const id = $(address).parent().parent().parent().attr('data-art');
     const diameter = $(address).parent().parent().siblings('.size').attr('data-art');
     let size = '';
-    if (diameter == 330) {
+    if (diameter == 280) {
         size = 'small';
     } else {
         size = 'big';
@@ -216,7 +216,7 @@ function throwTrash(address) {
     const diameter = $(address).parent().parent().siblings('.col-lg-6').children('.size').attr('data-art');
 
     let size = '';
-    if (diameter == 330) {
+    if (diameter == 280) {
         size = 'small';
     } else {
         size = 'big';

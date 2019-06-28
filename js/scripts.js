@@ -224,7 +224,7 @@ function makeReadbleMass() {
                     id: temp.id,
                     name: temp.name,
                     picture: temp.picture,
-                    weight: 330,
+                    weight: 280,
                     size: 'Мальнький',
                     price: temp.price_small,
                     quantity: dataFromLS[key].small
