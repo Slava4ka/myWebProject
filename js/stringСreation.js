@@ -25,33 +25,33 @@ function makeTippy(totalQuantity, totalPrice, readableMass) {
 
     if (!isEmpty(readableMass)) {
 
-        const smallPie = readableMass['small'];
-        const bigPie = readableMass['big'];
+        const smallSize = readableMass['small'];
+        const bigSize = readableMass['big'];
 
-        if (!isEmpty(smallPie)) {
-            for (let key in smallPie) {
+        if (!isEmpty(smallSize)) {
+            for (let key in smallSize) {
                 tempOut += makeBody(
-                    smallPie[key].picture,
-                    smallPie[key].id,
-                    smallPie[key].name,
-                    smallPie[key].size,
-                    smallPie[key].weight,
-                    smallPie[key].quantity,
-                    smallPie[key].price
+                    smallSize[key].picture,
+                    smallSize[key].id,
+                    smallSize[key].name,
+                    smallSize[key].size,
+                    smallSize[key].weight,
+                    smallSize[key].quantity,
+                    smallSize[key].price
                 );
             }
         }
 
         if (!isEmpty(readableMass['big'])) {
-            for (let key in bigPie) {
+            for (let key in bigSize) {
                 tempOut += makeBody(
-                    bigPie[key].picture,
-                    bigPie[key].id,
-                    bigPie[key].name,
-                    bigPie[key].size,
-                    bigPie[key].weight,
-                    bigPie[key].quantity,
-                    bigPie[key].price);
+                    bigSize[key].picture,
+                    bigSize[key].id,
+                    bigSize[key].name,
+                    bigSize[key].size,
+                    bigSize[key].weight,
+                    bigSize[key].quantity,
+                    bigSize[key].price);
             }
         }
     }

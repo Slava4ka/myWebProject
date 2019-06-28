@@ -3,11 +3,20 @@ let instance;
 
 $(document).ready(function () {
 
+    // выгружает список пирогов
+    createPiesLineCart();
+
+    // выгрпужает список пицц
+    createPizzaLineCart();
+
+    // устанавливает количество товаров в корзине
     setTotalCardValue();
+
     //слушатель на кнопку КОРЗИНА
     $('button.add-to-cart').on('click', addToCart);
 
 
+    // устанавливает якорь
     $('.anchor').on("click", function (event) {
         //прокрутка до якоря (раздела товаров)
         event.preventDefault();
@@ -16,6 +25,7 @@ $(document).ready(function () {
         $('html, body').animate({'scrollTop': dist - 150}, 1500);
     });
 
+    // выделение текущего раздела на навБаре
     $(window).on("scroll", function () {
         // выделение текущего раздела на навбаре
         $('section[id]').each(function () {
@@ -34,6 +44,7 @@ $(document).ready(function () {
 
     });
 
+    // изменение бегунка с размером
     $('.product__size-control-item').on('click', function () {
         // переключение размера товара
         const i = $(this).parent().find('.product__size-control-item').index($(this));
@@ -186,9 +197,22 @@ function createMiniCart() {
 
 function findByID(id) {
     // функция для нахождения эл-та по id в arrPies. Конченый костыль. Потом выпелить
-    for (let i = 0; i < arrPies.length; i++) {
-        if (arrPies[i].id == id) {
-            return arrPies[i]
+    let tempArr;
+    switch (id[0]) {
+        case "1":
+            tempArr = arrPies;
+            break;
+        case "2":
+            tempArr = arrPizza;
+            break;
+        default:
+            alert("Something goes wrong in findByID()");
+            break;
+    }
+
+    for (let i = 0; i < tempArr.length; i++) {
+        if (tempArr[i].id == id) {
+            return tempArr[i]
         }
     }
 }

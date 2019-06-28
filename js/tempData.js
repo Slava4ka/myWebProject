@@ -87,3 +87,39 @@ const arrPies = [
         price_small: "75"
     }
 ];
+
+const arrPizza = [
+        {
+            id: 20001,
+            name: "Маргарита",
+            picture: "picture/pizza/margarita-500x500.jpg",
+            description: "Тесто фирменное, сыр, помидоры, томатный соус",
+            have_small: false,
+            price_big: "400",
+        },
+        {
+            id: 20002,
+            name: "4 сыра",
+            picture: "picture/pizza/4cheese.jpg",
+            description: "Тесто фирменное, моцарелла, пармезан, сливочный сыр, брынза, томатный соус, сливочнй соус",
+            have_small: false,
+            price_big: "400",
+        },
+        {
+            id: 20003,
+            name: "Ассорти",
+            picture: "picture/pizza/myasnoe_assorti.png",
+            description: "Тесто фирменное, колбаса, ветчина, перец болгарский, помидоры, маслины, сыр, грибы, томатный соус, сливочнй соус",
+            have_small: false,
+            price_big: "400",
+        }, {
+            id: 20004,
+            name: "Домашняя",
+            picture: "picture/pizza/home.jpg",
+            description: "Тесто фирменное, сыр, колбаса, маслины, грибы, перец болгарский, томатный соус, сливочнй соус",
+            have_small: false,
+            price_big: "400",
+        }
+
+    ]
+;
