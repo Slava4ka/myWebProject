@@ -36,26 +36,26 @@ function lineCartConstructor(iterator, arr) {
     if (arr[iterator].have_small) {
         sizeControlSelector = "                            <div class=\"product__size-control\">\n" +
             "                                <div class=\"product__size-control-selector\"></div>\n" +
-            "                                <div class=\"product__size-control-item active\" value=\"big\">\n" +
+            "                                <div class=\"product__size-control-item active\" value=\"big\" data-art=\"" + arr[iterator].id + "\">\n" +
             "                                    <h5 class=\"selected_item mt-1\">900&nbsp;гр</h5>\n" +
             "                                </div>\n" +
-            "                                <div class=\"product__size-control-item\" value=\"small\">\n" +
+            "                                <div class=\"product__size-control-item\" value=\"small\" data-art=\"" + arr[iterator].id + "\">\n" +
             "                                    <h5 class=\"not_selected_item mt-2\">280&nbsp;гр</h5>\n" +
             "                                </div>\n" +
             "                            </div>\n";
     } else {
         sizeControlSelector = "                            <div class=\"product__size-control\">\n" +
             "                                <div class=\"product__size-control-selector\" style=\"width: 100%\"></div>\n" +
-            "                                <div class=\"product__size-control-item active\" value=\"big\">\n" +
+            "                                <div class=\"product__size-control-item active\" value=\"big\" data-art=\"" + arr[iterator].id + "\">\n" +
             "                                    <h5 class=\"selected_item mt-1\">900&nbsp;гр</h5>\n" +
             "                                </div>\n" +
             "                            </div>\n";
     }
 
-    const inCardANDprice = "                            <div class=\"row d-flex justify-content-between align-items-center\">\n" +
+    const inCardANDprice = "                            <div class=\"row d-flex justify-content-between align-items-center button-and-price\">\n" +
         "                                <div class=\"col-5\">\n" +
         "                                    <h4 class=\"font-weight-bold blue-text price\">\n" +
-        "                                        <strong>" + arr[iterator].price_big + "₽</strong>\n" +
+        "                                        <strong class='strong_price'>" + arr[iterator].price_big + "₽</strong>\n" +
         "                                    </h4>\n" +
         "                                </div>\n" +
         "\n" +

@@ -47,7 +47,7 @@ $(document).ready(function () {
 
     });
 
-    // изменение бегунка с размером
+    // изменение бегунка с размером и цены
     $('.product__size-control-item').on('click', function () {
         // переключение размера товара
         const i = $(this).parent().find('.product__size-control-item').index($(this));
@@ -55,6 +55,23 @@ $(document).ready(function () {
         console.clear();
         console.log(i);
         console.log($(this).attr('value'));
+
+        const price_path = $(this).parent().siblings('.button-and-price').children('.col-5')
+            .children('.price').children('.strong_price');
+        const current_good = findByID($(this).attr('data-art'));
+
+
+        switch (i) {
+            case 0:
+                price_path.html(current_good.price_big+"₽");
+                break;
+            case 1:
+                price_path.html(current_good.price_small+"₽");
+                break;
+            default:
+                alert("Index error")
+        }
+
 
         const selector = $(this).parent().find('.product__size-control-selector');
         selector.css('transform', 'translateX(' + 100 * i + '%');
@@ -208,6 +225,9 @@ function findByID(id) {
         case "2":
             tempArr = arrPizza;
             break;
+        case "3":
+            tempArr = arrHotMeals;
+            break;
         default:
             alert("Something goes wrong in findByID()");
             break;
@@ -238,8 +258,8 @@ function makeReadbleMass() {
                     id: temp.id,
                     name: temp.name,
                     picture: temp.picture,
-                    weight: 900,
-                    size: 'Большой',
+                    weight: temp.weight_big,
+                    size_description: temp.description_of_weight_big,
                     price: temp.price_big,
                     quantity: dataFromLS[key].big
                 };
@@ -251,8 +271,8 @@ function makeReadbleMass() {
                     id: temp.id,
                     name: temp.name,
                     picture: temp.picture,
-                    weight: 280,
-                    size: 'Мальнький',
+                    weight: temp.weight_small,
+                    size_description: temp.description_of_weight_small,
                     price: temp.price_small,
                     quantity: dataFromLS[key].small
                 };

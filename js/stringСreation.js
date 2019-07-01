@@ -34,7 +34,7 @@ function makeTippy(totalQuantity, totalPrice, readableMass) {
                     smallSize[key].picture,
                     smallSize[key].id,
                     smallSize[key].name,
-                    smallSize[key].size,
+                    smallSize[key].size_description,
                     smallSize[key].weight,
                     smallSize[key].quantity,
                     smallSize[key].price
@@ -48,7 +48,7 @@ function makeTippy(totalQuantity, totalPrice, readableMass) {
                     bigSize[key].picture,
                     bigSize[key].id,
                     bigSize[key].name,
-                    bigSize[key].size,
+                    bigSize[key].size_description,
                     bigSize[key].weight,
                     bigSize[key].quantity,
                     bigSize[key].price);
@@ -129,8 +129,11 @@ function plusGoods(address) {
 // добавить единицу  товара
     const id = $(address).parent().parent().parent().attr('data-art');
     const diameter = $(address).parent().parent().siblings('.size').attr('data-art');
+
+    console.log("id = " + id + " diameter = " + diameter);
+
     let size = '';
-    if (diameter == 280) {
+    if (diameter == 280 || diameter == 500) {
         size = 'small';
     } else {
         size = 'big';
@@ -169,8 +172,11 @@ function minusGoods(address) {
 //уменьшить количество товаров на 1, если в корзине 1 ед. товара, то вызвать dropGoods()
     const id = $(address).parent().parent().parent().attr('data-art');
     const diameter = $(address).parent().parent().siblings('.size').attr('data-art');
+
+    console.log("id = " + id + " diameter = " + diameter);
+
     let size = '';
-    if (diameter == 280) {
+    if (diameter == 280 || diameter == 500) {
         size = 'small';
     } else {
         size = 'big';
@@ -215,13 +221,16 @@ function throwTrash(address) {
     const id = $(address).parent().parent().siblings('.col-lg-6').attr('data-art');
     const diameter = $(address).parent().parent().siblings('.col-lg-6').children('.size').attr('data-art');
 
+    console.log("id = " + id + " diameter = " + diameter);
+
     let size = '';
-    if (diameter == 280) {
+    if (diameter == 280 || diameter == 500) {
         size = 'small';
     } else {
         size = 'big';
     }
 
+    console.log("throwTrash");
     dropGoods(id, size);
 }
 
@@ -244,6 +253,7 @@ function dropGoods(id, size) {
         addToLS(cart);
         setTotalCardValue();
         changeMiniCart();
+        console.log(dropGoods);
 
     } catch (e) {
         alert("Ups! Something goes wrong!");

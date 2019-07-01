@@ -8,7 +8,11 @@ const arrPies = [
         description: "Тесто фирменное, масло сливочное, сыр брынза, творог",
         have_small: true,
         price_big: "300",
-        price_small: "75"
+        price_small: "75",
+        weight_big: "900",
+        weight_small: "280",
+        description_of_weight_big: "Большой пирог",
+        description_of_weight_small: "Маленький пирог"
     }, {
         id: 10002,
         name: "\"Фыдджин\"",
@@ -16,7 +20,11 @@ const arrPies = [
         description: "Тесто фирменное, масло сливочное, свинной фарш, говяжий фарш, лук",
         have_small: true,
         price_big: "400",
-        price_small: "100"
+        price_small: "100",
+        weight_big: "900",
+        weight_small: "280",
+        description_of_weight_big: "Большой пирог",
+        description_of_weight_small: "Маленький пирог"
     }, {
         id: 10003,
         name: "\"Цахараджин\"",
@@ -24,7 +32,11 @@ const arrPies = [
         description: "Тесто фирменное, масло сливочное, сыр брынза, творг, бурачная батва, шпинат",
         have_small: true,
         price_big: "300",
-        price_small: "75"
+        price_small: "75",
+        weight_big: "900",
+        weight_small: "280",
+        description_of_weight_big: "Большой пирог",
+        description_of_weight_small: "Маленький пирог"
     }, {
         id: 10004,
         name: "\"Фыджин карчи\"",
@@ -32,7 +44,11 @@ const arrPies = [
         description: "Тесто фирменное, масло сливочное, сыр брынза, куриный фарш, шампиньоны, лук",
         have_small: true,
         price_big: "400",
-        price_small: "100"
+        price_small: "100",
+        weight_big: "900",
+        weight_small: "280",
+        description_of_weight_big: "Большой пирог",
+        description_of_weight_small: "Маленький пирог"
     }, {
         id: 10005,
         name: "\"Зокоджин \"",
@@ -40,14 +56,21 @@ const arrPies = [
         description: "Тесто фирменное, масло сливочное, картошка, шампиньоны",
         have_small: true,
         price_big: "300",
-        price_small: "75"
+        price_small: "75",
+        weight_big: "900",
+        weight_small: "280",
+        description_of_weight_big: "Большой пирог",
+        description_of_weight_small: "Маленький пирог"
     }, {
         id: 10006,
         name: "\"Балджин\" 🍒",
         picture: "picture/pies/006_without_background.png",
         description: "Тесто фирменное, масло сливочное, вишня",
         have_small: false,
-        price_big: "400"
+        price_big: "400",
+        weight_big: "900",
+        description_of_weight_big: "Большой пирог",
+        description_of_weight_small: "Маленький пирог"
     }, {
         id: 10007,
         name: "Пирог с индейкой",
@@ -55,7 +78,11 @@ const arrPies = [
         description: "Тесто фирменное, масло сливочное, сыр брынза, индюшиный фарш",
         have_small: true,
         price_big: "400",
-        price_small: "100"
+        price_small: "100",
+        weight_big: "900",
+        weight_small: "280",
+        description_of_weight_big: "Большой пирог",
+        description_of_weight_small: "Маленький пирог"
     }, {
         id: 10008,
         name: "\"Картофджин\"",
@@ -63,14 +90,21 @@ const arrPies = [
         description: "Тесто фирменное, масло сливочное, картошка, сыр Брынза",
         have_small: true,
         price_big: "300",
-        price_small: "75"
+        price_small: "75",
+        weight_big: "900",
+        weight_small: "280",
+        description_of_weight_big: "Большой пирог",
+        description_of_weight_small: "Маленький пирог"
     }, {
         id: 10009,
         name: "Хачапури по Имеретински",
         picture: "picture/pies/007_without_background.png",
         description: "Тесто фирменное, масло сливочное, сыр Брынза, сыр Сулугуни",
         have_small: false,
-        price_big: "400"
+        price_big: "400",
+        weight_big: "900",
+        description_of_weight_big: "Большой пирог",
+        description_of_weight_small: "Маленький пирог"
     }, {
         id: 10010,
         name: "\"Хадурджин\"",
@@ -78,7 +112,11 @@ const arrPies = [
         description: "Тесто фирменное, масло сливочное, фасоль",
         have_small: true,
         price_big: "300",
-        price_small: "75"
+        price_small: "75",
+        weight_big: "900",
+        weight_small: "280",
+        description_of_weight_big: "Большой пирог",
+        description_of_weight_small: "Маленький пирог"
     }, {
         id: 10011,
         name: "\"Кабускаджин\"",
@@ -86,7 +124,11 @@ const arrPies = [
         description: "Тесто фирменное, масло сливочное, капуста",
         have_small: true,
         price_big: "300",
-        price_small: "75"
+        price_small: "75",
+        weight_big: "900",
+        weight_small: "280",
+        description_of_weight_big: "Большой пирог",
+        description_of_weight_small: "Маленький пирог"
     }
 ];
 
@@ -98,6 +140,9 @@ const arrPizza = [
             description: "Тесто фирменное, сыр, помидоры, томатный соус",
             have_small: false,
             price_big: "400",
+            weight_big: "900",
+            description_of_weight_big: "Большая пицца",
+            description_of_weight_small: "Маленькая пицца"
         },
         {
             id: 20002,
@@ -106,6 +151,9 @@ const arrPizza = [
             description: "Тесто фирменное, моцарелла, пармезан, сливочный сыр, брынза, томатный соус, сливочнй соус",
             have_small: false,
             price_big: "400",
+            weight_big: "900",
+            description_of_weight_big: "Большая пицца",
+            description_of_weight_small: "Маленькая пицца"
         },
         {
             id: 20003,
@@ -114,6 +162,9 @@ const arrPizza = [
             description: "Тесто фирменное, колбаса, ветчина, перец болгарский, помидоры, маслины, сыр, грибы, томатный соус, сливочнй соус",
             have_small: false,
             price_big: "400",
+            weight_big: "900",
+            description_of_weight_big: "Большая пицца",
+            description_of_weight_small: "Маленькая пицца"
         }, {
             id: 20004,
             name: "Домашняя",
@@ -121,6 +172,9 @@ const arrPizza = [
             description: "Тесто фирменное, сыр, колбаса, маслины, грибы, перец болгарский, томатный соус, сливочнй соус",
             have_small: false,
             price_big: "400",
+            weight_big: "900",
+            description_of_weight_big: "Большая пицца",
+            description_of_weight_small: "Маленькая пицца"
         }
 
     ]
@@ -134,7 +188,11 @@ const arrHotMeals = [
         description: "Тесто фирменное, свиноговяжий фарш",
         have_small: true,
         price_big: "350",
-        price_small: "175"
+        price_small: "175",
+        weight_big: "1000",
+        weight_small: "500",
+        description_of_weight_big: "Большая порция",
+        description_of_weight_small: "Маленькая порция"
     },
     {
         id: 30002,
@@ -143,7 +201,11 @@ const arrHotMeals = [
         description: "Тесто фирменное, свиноговяжий фарш",
         have_small: true,
         price_big: "350",
-        price_small: "175"
+        price_small: "175",
+        weight_big: "1000",
+        weight_small: "500",
+        description_of_weight_big: "Большая порция",
+        description_of_weight_small: "Маленькая порция"
     },
     {
         id: 30003,
@@ -152,6 +214,10 @@ const arrHotMeals = [
         description: "Тесто фирменное, свиноговяжий фарш",
         have_small: true,
         price_big: "350",
-        price_small: "175"
+        price_small: "175",
+        weight_big: "1000",
+        weight_small: "500",
+        description_of_weight_big: "Большая порция",
+        description_of_weight_small: "Маленькая порция"
     }
 ];
