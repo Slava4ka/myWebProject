@@ -9,6 +9,9 @@ $(document).ready(function () {
     // выгрпужает список пицц
     createPizzaLineCart();
 
+    // выгружает список горячих блюд
+    createHotMealLineCart();
+
     // устанавливает количество товаров в корзине
     setTotalCardValue();
 

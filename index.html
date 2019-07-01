@@ -66,13 +66,13 @@
         <div class="collapse navbar-collapse" id="navbarContent">
             <ul id="navbarList" class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a href="#Ossetian_pies" class="nav-link waves-effect anchor">Осетинские пироги</a>
+                    <a href="#Osetian_pies" class="nav-link waves-effect anchor">Осетинские пироги</a>
                 </li>
                 <li class="nav-item">
                     <a href="#Pizza" class="nav-link waves-effect anchor">Пицца</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#Hot_dishes" class="nav-link waves-effect anchor">Горячие блюда</a>
+                    <a href="#Hot_meal" class="nav-link waves-effect anchor">Горячие блюда</a>
                 </li>
                 <li class="nav-item">
                     <a href="#Grill" class="nav-link waves-effect anchor">Гриль</a>
@@ -161,13 +161,13 @@
 
     <div class="container">
 
-        <div id="Ossetian_pies_Label">
+        <div id="Osetian_pies_Label">
             <h1>Осетинские пироги</h1>
         </div>
 
-        <section id="Ossetian_pies" class="text-center mb-4 mt-5">
+        <section id="Osetian_pies" class="text-center mb-4 mt-5">
             <div id="piesLineCart" class="row wow fadeIn">
-
+                <!-- script -->
             </div>
         </section>
 
@@ -177,94 +177,17 @@
 
         <section id="Pizza" class="text-center mb-4 mt-5">
             <div id="pizzaLineCart" class="row wow fadeIn">
+                <!-- script -->
             </div>
         </section>
 
-        <div id="Hot_dishes_Label">
+        <div id="Hot_meal_Label">
             <h1>Горячие блюда</h1>
         </div>
 
-        <section id="Hot_dishes" class="text-center mb-4 mt-5">
-            <div id="hot_dishesLineCart" class="row wow fadeIn">
-
-                <script>
-                    $(document).ready(function () {
-                        for (var i = 0; i < 3; i++)
-                            $("#hot_dishesLineCart").append("<div class=\"col-lg-3 col-md-6 md-4 mb-4\">\n" +
-                                "    <div class=\"card border-0\">\n" +
-                                "        <div class=\"view overlay\">\n" +
-                                "            <img class=\"card-img-top\"\n" +
-                                "                 src=\"https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/d01e4bd4-1a1d-4ba4-a4af-20b15283166c.jpg\"\n" +
-                                "                 alt=\"example\">\n" +
-                                "            <div class=\"text-left\"><i class=\"fas fa-info-circle\"></i></div>\n" +
-                                "            <a href=\"#\">\n" +
-                                "                <div class=\"mask rgba-white-slight\"></div>\n" +
-                                "            </a>\n" +
-                                "        </div>\n" +
-                                "        <div class=\"card-body text-center pt-0\">\n" +
-                                "            <h4 class=\"good_name\">Чизбургер-пицца</h4>\n" +
-                                "            <div class=\"good_info\">\n" +
-                                "                <h6>\n" +
-                                "                    <a class=\"dark-grey-text\">Соус бургер, мясной соус болоньезе, красный лук,\n" +
-                                "                        моцарелла,\n" +
-                                "                        томаты и соленые огурчики</a>\n" +
-                                "                </h6>\n" +
-                                "            </div>\n" +
-                                "            <!-- scrrrrrr -->\n" +
-                                "\n" +
-                                "            <div class=\"product__size-control\">\n" +
-                                "                <div class=\"product__size-control-selector\"\n" +
-                                "                     style=\"width: 50%; transform: translateX(0%);\"></div>\n" +
-                                "\n" +
-                                "                <div class=\"product__size-control-item\"><input type=\"radio\"\n" +
-                                "                                                               class=\"product__size-control-input\"\n" +
-                                "                                                               id=\"size_20_3\" name=\"size_20\" value=\"3\">\n" +
-                                "                    <label class=\"product__size-control-label product__size-control-label_3\"\n" +
-                                "                           data-testid=\"menu__pizza_size_3\" for=\"size_20_3\">\n" +
-                                "                        <h5 class=\"mt-1\">35&nbsp;см</h5>\n" +
-                                "                    </label>\n" +
-                                "                </div>\n" +
-                                "\n" +
-                                "                <div class=\"product__size-control-item\"><input type=\"radio\"\n" +
-                                "                                                               class=\"product__size-control-input\"\n" +
-                                "                                                               id=\"size_20_2\" name=\"size_20\" value=\"2\">\n" +
-                                "                    <label class=\"product__size-control-label product__size-control-label_2\"\n" +
-                                "                           data-testid=\"menu__pizza_size_2\" for=\"size_20_2\">\n" +
-                                "                        <h5 class=\"mt-1\">\n" +
-                                "                            30&nbsp;\n" +
-                                "                        </h5>\n" +
-                                "                    </label>\n" +
-                                "                </div>\n" +
-                                "            </div>\n" +
-                                "            <!-- scrrrr -->\n" +
-                                "\n" +
-                                "            <!-- див с кнопкой в корзина и ценой -->\n" +
-                                "\n" +
-                                "            <div class=\"row d-flex justify-content-between align-items-center\">\n" +
-                                "                <div class=\"col-5\">\n" +
-                                "                    <h4 class=\"font-weight-bold blue-text\">\n" +
-                                "                        <strong>500₽</strong>\n" +
-                                "                    </h4>\n" +
-                                "                </div>\n" +
-                                "\n" +
-                                "                <div class=\"col-7\">\n" +
-                                "                    <button type=\"button\" class=\"btn btn-outline-warning btn-tb\"\n" +
-                                "                            style=\"webkit-box-shadow: none; box-shadow: none\">\n" +
-                                "                                    <span>\n" +
-                                "                                        <strong>В&nbsp;корзину</strong>\n" +
-                                "                                    </span>\n" +
-                                "                    </button>\n" +
-                                "                </div>\n" +
-                                "            </div>\n" +
-                                "\n" +
-                                "            <!-- див с кнопкой в корзина и ценой -->\n" +
-                                "\n" +
-                                "        </div>\n" +
-                                "    </div>\n" +
-                                "</div>");
-                    });
-                </script>
-
+        <section id="Hot_meal" class="text-center mb-4 mt-5">
+            <div id="hotMealLineCart" class="row wow fadeIn">
+                <!-- script -->
             </div>
         </section>
 

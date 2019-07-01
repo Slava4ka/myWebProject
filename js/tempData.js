@@ -1,3 +1,5 @@
+// 1 - осетинские пироги; 2 - Пицца; 3 - Горячие блюда
+
 const arrPies = [
     {
         id: 10001,
@@ -123,3 +125,33 @@ const arrPizza = [
 
     ]
 ;
+
+const arrHotMeals = [
+    {
+        id: 30001,
+        name: "Хинкали",
+        picture: "picture/hot_meals/hinkali.png",
+        description: "Тесто фирменное, свиноговяжий фарш",
+        have_small: true,
+        price_big: "350",
+        price_small: "175"
+    },
+    {
+        id: 30002,
+        name: "Пельмени",
+        picture: "picture/hot_meals/dumplings.png",
+        description: "Тесто фирменное, свиноговяжий фарш",
+        have_small: true,
+        price_big: "350",
+        price_small: "175"
+    },
+    {
+        id: 30003,
+        name: "Вареники",
+        picture: "picture/hot_meals/vareniki.png",
+        description: "Тесто фирменное, свиноговяжий фарш",
+        have_small: true,
+        price_big: "350",
+        price_small: "175"
+    }
+];

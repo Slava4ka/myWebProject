@@ -10,6 +10,12 @@ function createPizzaLineCart() {
     }
 }
 
+function createHotMealLineCart() {
+    for (let i = 0; i < arrHotMeals.length; i++) {
+        $("#hotMealLineCart").append(lineCartConstructor(i, arrHotMeals));
+    }
+}
+
 function lineCartConstructor(iterator, arr) {
     const head = "<div class=\"col-lg-3 col-md-6 md-4 mb-4\">\n" +
         "                    <div class=\"card border-0\">\n" +
