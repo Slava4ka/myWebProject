@@ -47,17 +47,21 @@ function lineCartConstructor(iterator, arr) {
         sizeControlSelector = "                            <div class=\"product__size-control\">\n" +
             "                                <div class=\"product__size-control-selector\"></div>\n" +
             "                                <div class=\"product__size-control-item active\" value=\"big\" data-art=\"" + arr[iterator].id + "\">\n" +
-            "                                    <h5 class=\"selected_item mt-1\">"+arr[iterator].weight_big+"&nbsp;"+arr[iterator].metrics+"</h5>\n" +
+            "                                    <h5 class=\"selected_item mt-1\">" + arr[iterator].weight_big + "&nbsp;" + arr[iterator].metrics + "</h5>\n" +
             "                                </div>\n" +
             "                                <div class=\"product__size-control-item\" value=\"small\" data-art=\"" + arr[iterator].id + "\">\n" +
-            "                                    <h5 class=\"not_selected_item mt-2\">"+arr[iterator].weight_small+"&nbsp;"+arr[iterator].metrics+"</h5>\n" +
+            "                                    <h5 class=\"not_selected_item mt-2\">" + arr[iterator].weight_small + "&nbsp;" + arr[iterator].metrics + "</h5>\n" +
             "                                </div>\n" +
             "                            </div>\n";
     } else {
-        sizeControlSelector = "                            <div class=\"product__size-control\">\n" +
+        sizeControlSelector = "<div class=\"product__size-control\"";
+        if (!arr[iterator].have_size_selector) {
+            sizeControlSelector += "style = \"display:none\""
+        }
+        sizeControlSelector += ">\n" +
             "                                <div class=\"product__size-control-selector\" style=\"width: 100%\"></div>\n" +
             "                                <div class=\"product__size-control-item active\" value=\"big\" data-art=\"" + arr[iterator].id + "\">\n" +
-            "                                    <h5 class=\"selected_item mt-1\">"+arr[iterator].weight_big+"&nbsp;"+arr[iterator].metrics+"</h5>\n" +
+            "                                    <h5 class=\"selected_item mt-1\">" + arr[iterator].weight_big + "&nbsp;" + arr[iterator].metrics + "</h5>\n" +
             "                                </div>\n" +
             "                            </div>\n";
     }

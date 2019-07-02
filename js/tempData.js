@@ -13,7 +13,8 @@ const arrPies = [
         weight_small: "280",
         description_of_weight_big: "Большой пирог",
         description_of_weight_small: "Маленький пирог",
-        metrics: "гр."
+        metrics: "гр.",
+        have_size_selector: true
     }, {
         id: 10002,
         name: "\"Фыдджин\"",
@@ -26,7 +27,8 @@ const arrPies = [
         weight_small: "280",
         description_of_weight_big: "Большой пирог",
         description_of_weight_small: "Маленький пирог",
-        metrics: "гр."
+        metrics: "гр.",
+        have_size_selector: true
     }, {
         id: 10003,
         name: "\"Цахараджин\"",
@@ -39,7 +41,8 @@ const arrPies = [
         weight_small: "280",
         description_of_weight_big: "Большой пирог",
         description_of_weight_small: "Маленький пирог",
-        metrics: "гр."
+        metrics: "гр.",
+        have_size_selector: true
     }, {
         id: 10004,
         name: "\"Фыджин карчи\"",
@@ -52,7 +55,8 @@ const arrPies = [
         weight_small: "280",
         description_of_weight_big: "Большой пирог",
         description_of_weight_small: "Маленький пирог",
-        metrics: "гр."
+        metrics: "гр.",
+        have_size_selector: true
     }, {
         id: 10005,
         name: "\"Зокоджин \"",
@@ -65,7 +69,8 @@ const arrPies = [
         weight_small: "280",
         description_of_weight_big: "Большой пирог",
         description_of_weight_small: "Маленький пирог",
-        metrics: "гр."
+        metrics: "гр.",
+        have_size_selector: true
     }, {
         id: 10006,
         name: "\"Балджин\" 🍒",
@@ -76,7 +81,8 @@ const arrPies = [
         weight_big: "900",
         description_of_weight_big: "Большой пирог",
         description_of_weight_small: "Маленький пирог",
-        metrics: "гр."
+        metrics: "гр.",
+        have_size_selector: true
     }, {
         id: 10007,
         name: "Пирог с индейкой",
@@ -89,7 +95,8 @@ const arrPies = [
         weight_small: "280",
         description_of_weight_big: "Большой пирог",
         description_of_weight_small: "Маленький пирог",
-        metrics: "гр."
+        metrics: "гр.",
+        have_size_selector: true
     }, {
         id: 10008,
         name: "\"Картофджин\"",
@@ -102,7 +109,8 @@ const arrPies = [
         weight_small: "280",
         description_of_weight_big: "Большой пирог",
         description_of_weight_small: "Маленький пирог",
-        metrics: "гр."
+        metrics: "гр.",
+        have_size_selector: true
     }, {
         id: 10009,
         name: "Хачапури по Имеретински",
@@ -113,7 +121,8 @@ const arrPies = [
         weight_big: "900",
         description_of_weight_big: "Большой пирог",
         description_of_weight_small: "Маленький пирог",
-        metrics: "гр."
+        metrics: "гр.",
+        have_size_selector: true
     }, {
         id: 10010,
         name: "\"Хадурджин\"",
@@ -126,7 +135,8 @@ const arrPies = [
         weight_small: "280",
         description_of_weight_big: "Большой пирог",
         description_of_weight_small: "Маленький пирог",
-        metrics: "гр."
+        metrics: "гр.",
+        have_size_selector: true
     }, {
         id: 10011,
         name: "\"Кабускаджин\"",
@@ -139,7 +149,8 @@ const arrPies = [
         weight_small: "280",
         description_of_weight_big: "Большой пирог",
         description_of_weight_small: "Маленький пирог",
-        metrics: "гр."
+        metrics: "гр.",
+        have_size_selector: true
     }
 ];
 
@@ -154,7 +165,8 @@ const arrPizza = [
         weight_big: "900",
         description_of_weight_big: "Большая пицца",
         description_of_weight_small: "Маленькая пицца",
-        metrics: "гр."
+        metrics: "гр.",
+        have_size_selector: true
     },
     {
         id: 20002,
@@ -166,7 +178,8 @@ const arrPizza = [
         weight_big: "900",
         description_of_weight_big: "Большая пицца",
         description_of_weight_small: "Маленькая пицца",
-        metrics: "гр."
+        metrics: "гр.",
+        have_size_selector: true
     },
     {
         id: 20003,
@@ -178,7 +191,8 @@ const arrPizza = [
         weight_big: "900",
         description_of_weight_big: "Большая пицца",
         description_of_weight_small: "Маленькая пицца",
-        metrics: "гр."
+        metrics: "гр.",
+        have_size_selector: true
     }, {
         id: 20004,
         name: "Домашняя",
@@ -189,7 +203,8 @@ const arrPizza = [
         weight_big: "900",
         description_of_weight_big: "Большая пицца",
         description_of_weight_small: "Маленькая пицца",
-        metrics: "гр."
+        metrics: "гр.",
+        have_size_selector: true
     }
 ];
 
@@ -206,7 +221,8 @@ const arrHotMeals = [
         weight_small: "500",
         description_of_weight_big: "Большая порция",
         description_of_weight_small: "Маленькая порция",
-        metrics: "гр."
+        metrics: "гр.",
+        have_size_selector: true
     },
     {
         id: 30002,
@@ -220,7 +236,8 @@ const arrHotMeals = [
         weight_small: "500",
         description_of_weight_big: "Большая порция",
         description_of_weight_small: "Маленькая порция",
-        metrics: "гр."
+        metrics: "гр.",
+        have_size_selector: true
     },
     {
         id: 30003,
@@ -235,7 +252,8 @@ const arrHotMeals = [
         description_of_weight_big: "Большая порция с картошкой 🥔",
         description_of_weight_small: "Маленькая порция с картошкой 🥔",
         special_card: true,
-        metrics: "гр."
+        metrics: "гр.",
+        have_size_selector: true
     },
     {
         id: 30004,
@@ -250,7 +268,8 @@ const arrHotMeals = [
         description_of_weight_big: "Большая порция с капустой 🥦",
         description_of_weight_small: "Маленькая порция с капустой 🥦",
         special_card: true,
-        metrics: "гр."
+        metrics: "гр.",
+        have_size_selector: true
     },
     {
         id: 30005,
@@ -265,7 +284,8 @@ const arrHotMeals = [
         description_of_weight_big: "Большая порция с вишней 🍒",
         description_of_weight_small: "Маленькая порция с вишней 🍒",
         special_card: true,
-        metrics: "гр."
+        metrics: "гр.",
+        have_size_selector: true
     },
     {
         id: 30006,
@@ -280,7 +300,8 @@ const arrHotMeals = [
         description_of_weight_big: "Большая порция с творогом 🍚",
         description_of_weight_small: "Маленькая порция с творогом 🍚",
         special_card: true,
-        metrics: "гр."
+        metrics: "гр.",
+        have_size_selector: true
     }
 ];
 
@@ -294,7 +315,8 @@ arrGrill = [
         price_big: "400",
         weight_big: "1",
         description_of_weight_big: "",
-        metrics: "шт."
+        metrics: "шт.",
+        have_size_selector: false
     },
     {
         id: 40002,
@@ -305,6 +327,7 @@ arrGrill = [
         price_big: "100",
         weight_big: "1",
         description_of_weight_big: "",
-        metrics: "шт."
+        metrics: "шт.",
+        have_size_selector: false
     }
 ];
