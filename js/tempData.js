@@ -1,4 +1,4 @@
-// 1 - осетинские пироги; 2 - Пицца; 3 - Горячие блюда
+// 1 - осетинские пироги; 2 - Пицца; 3 - Горячие блюда; 4 - Гриль
 
 const arrPies = [
     {
@@ -12,7 +12,8 @@ const arrPies = [
         weight_big: "900",
         weight_small: "280",
         description_of_weight_big: "Большой пирог",
-        description_of_weight_small: "Маленький пирог"
+        description_of_weight_small: "Маленький пирог",
+        metrics: "гр."
     }, {
         id: 10002,
         name: "\"Фыдджин\"",
@@ -24,7 +25,8 @@ const arrPies = [
         weight_big: "900",
         weight_small: "280",
         description_of_weight_big: "Большой пирог",
-        description_of_weight_small: "Маленький пирог"
+        description_of_weight_small: "Маленький пирог",
+        metrics: "гр."
     }, {
         id: 10003,
         name: "\"Цахараджин\"",
@@ -36,7 +38,8 @@ const arrPies = [
         weight_big: "900",
         weight_small: "280",
         description_of_weight_big: "Большой пирог",
-        description_of_weight_small: "Маленький пирог"
+        description_of_weight_small: "Маленький пирог",
+        metrics: "гр."
     }, {
         id: 10004,
         name: "\"Фыджин карчи\"",
@@ -48,7 +51,8 @@ const arrPies = [
         weight_big: "900",
         weight_small: "280",
         description_of_weight_big: "Большой пирог",
-        description_of_weight_small: "Маленький пирог"
+        description_of_weight_small: "Маленький пирог",
+        metrics: "гр."
     }, {
         id: 10005,
         name: "\"Зокоджин \"",
@@ -60,7 +64,8 @@ const arrPies = [
         weight_big: "900",
         weight_small: "280",
         description_of_weight_big: "Большой пирог",
-        description_of_weight_small: "Маленький пирог"
+        description_of_weight_small: "Маленький пирог",
+        metrics: "гр."
     }, {
         id: 10006,
         name: "\"Балджин\" 🍒",
@@ -70,7 +75,8 @@ const arrPies = [
         price_big: "400",
         weight_big: "900",
         description_of_weight_big: "Большой пирог",
-        description_of_weight_small: "Маленький пирог"
+        description_of_weight_small: "Маленький пирог",
+        metrics: "гр."
     }, {
         id: 10007,
         name: "Пирог с индейкой",
@@ -82,7 +88,8 @@ const arrPies = [
         weight_big: "900",
         weight_small: "280",
         description_of_weight_big: "Большой пирог",
-        description_of_weight_small: "Маленький пирог"
+        description_of_weight_small: "Маленький пирог",
+        metrics: "гр."
     }, {
         id: 10008,
         name: "\"Картофджин\"",
@@ -94,7 +101,8 @@ const arrPies = [
         weight_big: "900",
         weight_small: "280",
         description_of_weight_big: "Большой пирог",
-        description_of_weight_small: "Маленький пирог"
+        description_of_weight_small: "Маленький пирог",
+        metrics: "гр."
     }, {
         id: 10009,
         name: "Хачапури по Имеретински",
@@ -104,7 +112,8 @@ const arrPies = [
         price_big: "400",
         weight_big: "900",
         description_of_weight_big: "Большой пирог",
-        description_of_weight_small: "Маленький пирог"
+        description_of_weight_small: "Маленький пирог",
+        metrics: "гр."
     }, {
         id: 10010,
         name: "\"Хадурджин\"",
@@ -116,7 +125,8 @@ const arrPies = [
         weight_big: "900",
         weight_small: "280",
         description_of_weight_big: "Большой пирог",
-        description_of_weight_small: "Маленький пирог"
+        description_of_weight_small: "Маленький пирог",
+        metrics: "гр."
     }, {
         id: 10011,
         name: "\"Кабускаджин\"",
@@ -128,55 +138,60 @@ const arrPies = [
         weight_big: "900",
         weight_small: "280",
         description_of_weight_big: "Большой пирог",
-        description_of_weight_small: "Маленький пирог"
+        description_of_weight_small: "Маленький пирог",
+        metrics: "гр."
     }
 ];
 
 const arrPizza = [
-        {
-            id: 20001,
-            name: "Маргарита",
-            picture: "picture/pizza/margarita-500x500.jpg",
-            description: "Тесто фирменное, сыр, помидоры, томатный соус",
-            have_small: false,
-            price_big: "400",
-            weight_big: "900",
-            description_of_weight_big: "Большая пицца",
-            description_of_weight_small: "Маленькая пицца"
-        },
-        {
-            id: 20002,
-            name: "4 сыра",
-            picture: "picture/pizza/4cheese.jpg",
-            description: "Тесто фирменное, моцарелла, пармезан, сливочный сыр, брынза, томатный соус, сливочнй соус",
-            have_small: false,
-            price_big: "400",
-            weight_big: "900",
-            description_of_weight_big: "Большая пицца",
-            description_of_weight_small: "Маленькая пицца"
-        },
-        {
-            id: 20003,
-            name: "Ассорти",
-            picture: "picture/pizza/myasnoe_assorti.png",
-            description: "Тесто фирменное, колбаса, ветчина, перец болгарский, помидоры, маслины, сыр, грибы, томатный соус, сливочнй соус",
-            have_small: false,
-            price_big: "400",
-            weight_big: "900",
-            description_of_weight_big: "Большая пицца",
-            description_of_weight_small: "Маленькая пицца"
-        }, {
-            id: 20004,
-            name: "Домашняя",
-            picture: "picture/pizza/home.jpg",
-            description: "Тесто фирменное, сыр, колбаса, маслины, грибы, перец болгарский, томатный соус, сливочнй соус",
-            have_small: false,
-            price_big: "400",
-            weight_big: "900",
-            description_of_weight_big: "Большая пицца",
-            description_of_weight_small: "Маленькая пицца"
-        }
-    ];
+    {
+        id: 20001,
+        name: "Маргарита",
+        picture: "picture/pizza/margarita-500x500.jpg",
+        description: "Тесто фирменное, сыр, помидоры, томатный соус",
+        have_small: false,
+        price_big: "400",
+        weight_big: "900",
+        description_of_weight_big: "Большая пицца",
+        description_of_weight_small: "Маленькая пицца",
+        metrics: "гр."
+    },
+    {
+        id: 20002,
+        name: "4 сыра",
+        picture: "picture/pizza/4cheese.jpg",
+        description: "Тесто фирменное, моцарелла, пармезан, сливочный сыр, брынза, томатный соус, сливочнй соус",
+        have_small: false,
+        price_big: "400",
+        weight_big: "900",
+        description_of_weight_big: "Большая пицца",
+        description_of_weight_small: "Маленькая пицца",
+        metrics: "гр."
+    },
+    {
+        id: 20003,
+        name: "Ассорти",
+        picture: "picture/pizza/myasnoe_assorti.png",
+        description: "Тесто фирменное, колбаса, ветчина, перец болгарский, помидоры, маслины, сыр, грибы, томатный соус, сливочнй соус",
+        have_small: false,
+        price_big: "400",
+        weight_big: "900",
+        description_of_weight_big: "Большая пицца",
+        description_of_weight_small: "Маленькая пицца",
+        metrics: "гр."
+    }, {
+        id: 20004,
+        name: "Домашняя",
+        picture: "picture/pizza/home.jpg",
+        description: "Тесто фирменное, сыр, колбаса, маслины, грибы, перец болгарский, томатный соус, сливочнй соус",
+        have_small: false,
+        price_big: "400",
+        weight_big: "900",
+        description_of_weight_big: "Большая пицца",
+        description_of_weight_small: "Маленькая пицца",
+        metrics: "гр."
+    }
+];
 
 const arrHotMeals = [
     {
@@ -190,7 +205,8 @@ const arrHotMeals = [
         weight_big: "1000",
         weight_small: "500",
         description_of_weight_big: "Большая порция",
-        description_of_weight_small: "Маленькая порция"
+        description_of_weight_small: "Маленькая порция",
+        metrics: "гр."
     },
     {
         id: 30002,
@@ -203,7 +219,8 @@ const arrHotMeals = [
         weight_big: "1000",
         weight_small: "500",
         description_of_weight_big: "Большая порция",
-        description_of_weight_small: "Маленькая порция"
+        description_of_weight_small: "Маленькая порция",
+        metrics: "гр."
     },
     {
         id: 30003,
@@ -215,9 +232,10 @@ const arrHotMeals = [
         price_small: "175",
         weight_big: "1000",
         weight_small: "500",
-        description_of_weight_big: "Большая порция с картошкой",
-        description_of_weight_small: "Маленькая порция с картошкой",
-        special_card: true
+        description_of_weight_big: "Большая порция с картошкой 🥔",
+        description_of_weight_small: "Маленькая порция с картошкой 🥔",
+        special_card: true,
+        metrics: "гр."
     },
     {
         id: 30004,
@@ -229,9 +247,10 @@ const arrHotMeals = [
         price_small: "175",
         weight_big: "1000",
         weight_small: "500",
-        description_of_weight_big: "Большая порция с капустой",
-        description_of_weight_small: "Маленькая порция с капустой",
-        special_card: true
+        description_of_weight_big: "Большая порция с капустой 🥦",
+        description_of_weight_small: "Маленькая порция с капустой 🥦",
+        special_card: true,
+        metrics: "гр."
     },
     {
         id: 30005,
@@ -243,9 +262,10 @@ const arrHotMeals = [
         price_small: "175",
         weight_big: "1000",
         weight_small: "500",
-        description_of_weight_big: "Большая порция с вишней",
-        description_of_weight_small: "Маленькая порция с вишней",
-        special_card: true
+        description_of_weight_big: "Большая порция с вишней 🍒",
+        description_of_weight_small: "Маленькая порция с вишней 🍒",
+        special_card: true,
+        metrics: "гр."
     },
     {
         id: 30006,
@@ -257,8 +277,34 @@ const arrHotMeals = [
         price_small: "175",
         weight_big: "1000",
         weight_small: "500",
-        description_of_weight_big: "Большая порция с творогом",
-        description_of_weight_small: "Маленькая порция с творогом",
-        special_card: true
+        description_of_weight_big: "Большая порция с творогом 🍚",
+        description_of_weight_small: "Маленькая порция с творогом 🍚",
+        special_card: true,
+        metrics: "гр."
+    }
+];
+
+arrGrill = [
+    {
+        id: 40001,
+        name: "Курочка Гриль",
+        picture: "picture/grill/grill_chichen.png",
+        description: "Курица приготовденная в фирменом соусе. Вес ~1500 гр.",
+        have_small: false,
+        price_big: "400",
+        weight_big: "1",
+        description_of_weight_big: "",
+        metrics: "шт."
+    },
+    {
+        id: 40002,
+        name: "Куриные крылышки",
+        picture: "picture/grill/chicken_wings.png",
+        description: "Куриные крылышки, приготовленные в гриле в панеровочных сухорях. 5 шт. на шпашке",
+        have_small: false,
+        price_big: "100",
+        weight_big: "1",
+        description_of_weight_big: "",
+        metrics: "шт."
     }
 ];

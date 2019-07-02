@@ -12,6 +12,9 @@ $(document).ready(function () {
     // выгружает список горячих блюд
     createHotMealLineCart();
 
+    // выгружает список гриль
+    createGrillLineCart();
+
     // устанавливает количество товаров в корзине
     setTotalCardValue();
 
@@ -234,6 +237,9 @@ function findByID(id) {
         case "3":
             tempArr = arrHotMeals;
             break;
+        case "4":
+            tempArr = arrGrill;
+            break;
         default:
             alert("Something goes wrong in findByID()");
             break;
@@ -267,6 +273,7 @@ function makeReadbleMass() {
                     weight: temp.weight_big,
                     size_description: temp.description_of_weight_big,
                     price: temp.price_big,
+                    metrics: temp.metrics,
                     quantity: dataFromLS[key].big
                 };
                 totalQuantity++;
@@ -280,6 +287,7 @@ function makeReadbleMass() {
                     weight: temp.weight_small,
                     size_description: temp.description_of_weight_small,
                     price: temp.price_small,
+                    metrics: temp.metrics,
                     quantity: dataFromLS[key].small
                 };
                 totalQuantity++;

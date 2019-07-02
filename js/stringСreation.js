@@ -37,7 +37,8 @@ function makeTippy(totalQuantity, totalPrice, readableMass) {
                     smallSize[key].size_description,
                     smallSize[key].weight,
                     smallSize[key].quantity,
-                    smallSize[key].price
+                    smallSize[key].price,
+                    smallSize[key].metrics
                 );
             }
         }
@@ -51,7 +52,9 @@ function makeTippy(totalQuantity, totalPrice, readableMass) {
                     bigSize[key].size_description,
                     bigSize[key].weight,
                     bigSize[key].quantity,
-                    bigSize[key].price);
+                    bigSize[key].price,
+                    bigSize[key].metrics
+                );
             }
         }
     }
@@ -83,7 +86,7 @@ function makeTippy(totalQuantity, totalPrice, readableMass) {
 }
 
 
-function makeBody(picture, id, name, size, weight, quantity, price) {
+function makeBody(picture, id, name, size, weight, quantity, price, metrics) {
     return '<div class="row cart-detail">\n' +
         '\n' +
         '                            <div class="col-lg-3 col-sm-3 col-3 cart-detail-img">\n' +
@@ -94,7 +97,7 @@ function makeBody(picture, id, name, size, weight, quantity, price) {
         '                                    <h6 class="goods-name">' + name + '</h6>\n' +
         '                                </div>\n' +
         '                                <div class="size" data-art="' + weight + '">\n' +
-        '                                    <h6 class="goods-size">' + size + ', ' + weight + 'гр.</h6>\n' +
+        '                                    <h6 class="goods-size">' + size + ' ' + weight + ' ' + metrics + '</h6>\n' +
         '                                </div>\n' +
         '                                <div class="count">\n' +
         '                                    <div class="minus d-inline-block">\n' +

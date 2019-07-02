@@ -17,6 +17,13 @@ function createHotMealLineCart() {
     $("#hotMealLineCart").append(addSpecialCard(arrHotMeals));
 }
 
+function createGrillLineCart() {
+    for (let i = 0; i < arrGrill.length; i++) {
+        $("#grillLineCart").append(lineCartConstructor(i, arrGrill));
+    }
+}
+
+
 function lineCartConstructor(iterator, arr) {
 
     const head = "<div class=\"col-lg-3 col-md-6 md-4 mb-4\">\n" +
@@ -40,17 +47,17 @@ function lineCartConstructor(iterator, arr) {
         sizeControlSelector = "                            <div class=\"product__size-control\">\n" +
             "                                <div class=\"product__size-control-selector\"></div>\n" +
             "                                <div class=\"product__size-control-item active\" value=\"big\" data-art=\"" + arr[iterator].id + "\">\n" +
-            "                                    <h5 class=\"selected_item mt-1\">900&nbsp;гр</h5>\n" +
+            "                                    <h5 class=\"selected_item mt-1\">"+arr[iterator].weight_big+"&nbsp;"+arr[iterator].metrics+"</h5>\n" +
             "                                </div>\n" +
             "                                <div class=\"product__size-control-item\" value=\"small\" data-art=\"" + arr[iterator].id + "\">\n" +
-            "                                    <h5 class=\"not_selected_item mt-2\">280&nbsp;гр</h5>\n" +
+            "                                    <h5 class=\"not_selected_item mt-2\">"+arr[iterator].weight_small+"&nbsp;"+arr[iterator].metrics+"</h5>\n" +
             "                                </div>\n" +
             "                            </div>\n";
     } else {
         sizeControlSelector = "                            <div class=\"product__size-control\">\n" +
             "                                <div class=\"product__size-control-selector\" style=\"width: 100%\"></div>\n" +
             "                                <div class=\"product__size-control-item active\" value=\"big\" data-art=\"" + arr[iterator].id + "\">\n" +
-            "                                    <h5 class=\"selected_item mt-1\">900&nbsp;гр</h5>\n" +
+            "                                    <h5 class=\"selected_item mt-1\">"+arr[iterator].weight_big+"&nbsp;"+arr[iterator].metrics+"</h5>\n" +
             "                                </div>\n" +
             "                            </div>\n";
     }
