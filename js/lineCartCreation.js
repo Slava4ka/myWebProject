@@ -23,6 +23,12 @@ function createGrillLineCart() {
     }
 }
 
+function createDrinksLineCart() {
+    for (let i = 0; i < arrDrinks.length; i++) {
+        $("#the_drinksLineCart").append(lineCartConstructor(i, arrDrinks));
+    }
+}
+
 
 function lineCartConstructor(iterator, arr) {
 
@@ -30,12 +36,19 @@ function lineCartConstructor(iterator, arr) {
         "                    <div class=\"card border-0\">\n" +
         "                        <div class=\"view overlay\">\n";
 
-    const description = "                            <img class=\"card-img-top\"\n src=" + arr[iterator].picture + "\n alt=\"example\">\n" +
+    let description = "                            <img class=\"card-img-top\"\n src=" + arr[iterator].picture + "\n alt=\"example\">\n" +
         "                            <div class=\"text-left\"><i class=\"fas fa-info-circle\"></i></div>\n" +
         "                        </div>\n" +
         "                        <div class=\"card-body text-center pt-3\">\n" +
         "                            <h4 class=\"good_name\">" + arr[iterator].name + "</h4>\n" +
-        "                            <div class=\"good_info\">\n" +
+        "                            <div class=\"good_info\"";
+
+
+    if (!arr[iterator].have_description) {
+        description += "style = \"display:none\"";
+    }
+
+    description += ">\n" +
         "                                <h6>\n" +
         "                                    <a class=\"dark-grey-text\">" + arr[iterator].description + "</a>\n" +
         "                                </h6>\n" +
@@ -55,9 +68,11 @@ function lineCartConstructor(iterator, arr) {
             "                            </div>\n";
     } else {
         sizeControlSelector = "<div class=\"product__size-control\"";
+
         if (!arr[iterator].have_size_selector) {
             sizeControlSelector += "style = \"display:none\""
         }
+
         sizeControlSelector += ">\n" +
             "                                <div class=\"product__size-control-selector\" style=\"width: 100%\"></div>\n" +
             "                                <div class=\"product__size-control-item active\" value=\"big\" data-art=\"" + arr[iterator].id + "\">\n" +

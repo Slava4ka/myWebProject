@@ -15,6 +15,9 @@ $(document).ready(function () {
     // выгружает список гриль
     createGrillLineCart();
 
+    //выгружает список напитков
+    createDrinksLineCart();
+
     // устанавливает количество товаров в корзине
     setTotalCardValue();
 
@@ -239,6 +242,9 @@ function findByID(id) {
             break;
         case "4":
             tempArr = arrGrill;
+            break;
+        case "5":
+            tempArr = arrDrinks;
             break;
         default:
             alert("Something goes wrong in findByID()");

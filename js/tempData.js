@@ -1,4 +1,4 @@
-// 1 - осетинские пироги; 2 - Пицца; 3 - Горячие блюда; 4 - Гриль
+// 1 - осетинские пироги; 2 - Пицца; 3 - Горячие блюда; 4 - Гриль; 5 - напитки
 
 const arrPies = [
     {
@@ -14,6 +14,7 @@ const arrPies = [
         description_of_weight_big: "Большой пирог",
         description_of_weight_small: "Маленький пирог",
         metrics: "гр.",
+        have_description: true,
         have_size_selector: true
     }, {
         id: 10002,
@@ -28,6 +29,7 @@ const arrPies = [
         description_of_weight_big: "Большой пирог",
         description_of_weight_small: "Маленький пирог",
         metrics: "гр.",
+        have_description: true,
         have_size_selector: true
     }, {
         id: 10003,
@@ -42,6 +44,7 @@ const arrPies = [
         description_of_weight_big: "Большой пирог",
         description_of_weight_small: "Маленький пирог",
         metrics: "гр.",
+        have_description: true,
         have_size_selector: true
     }, {
         id: 10004,
@@ -56,6 +59,7 @@ const arrPies = [
         description_of_weight_big: "Большой пирог",
         description_of_weight_small: "Маленький пирог",
         metrics: "гр.",
+        have_description: true,
         have_size_selector: true
     }, {
         id: 10005,
@@ -70,6 +74,7 @@ const arrPies = [
         description_of_weight_big: "Большой пирог",
         description_of_weight_small: "Маленький пирог",
         metrics: "гр.",
+        have_description: true,
         have_size_selector: true
     }, {
         id: 10006,
@@ -82,6 +87,7 @@ const arrPies = [
         description_of_weight_big: "Большой пирог",
         description_of_weight_small: "Маленький пирог",
         metrics: "гр.",
+        have_description: true,
         have_size_selector: true
     }, {
         id: 10007,
@@ -96,6 +102,7 @@ const arrPies = [
         description_of_weight_big: "Большой пирог",
         description_of_weight_small: "Маленький пирог",
         metrics: "гр.",
+        have_description: true,
         have_size_selector: true
     }, {
         id: 10008,
@@ -110,6 +117,7 @@ const arrPies = [
         description_of_weight_big: "Большой пирог",
         description_of_weight_small: "Маленький пирог",
         metrics: "гр.",
+        have_description: true,
         have_size_selector: true
     }, {
         id: 10009,
@@ -122,6 +130,7 @@ const arrPies = [
         description_of_weight_big: "Большой пирог",
         description_of_weight_small: "Маленький пирог",
         metrics: "гр.",
+        have_description: true,
         have_size_selector: true
     }, {
         id: 10010,
@@ -136,6 +145,7 @@ const arrPies = [
         description_of_weight_big: "Большой пирог",
         description_of_weight_small: "Маленький пирог",
         metrics: "гр.",
+        have_description: true,
         have_size_selector: true
     }, {
         id: 10011,
@@ -150,6 +160,7 @@ const arrPies = [
         description_of_weight_big: "Большой пирог",
         description_of_weight_small: "Маленький пирог",
         metrics: "гр.",
+        have_description: true,
         have_size_selector: true
     }
 ];
@@ -166,6 +177,7 @@ const arrPizza = [
         description_of_weight_big: "Большая пицца",
         description_of_weight_small: "Маленькая пицца",
         metrics: "гр.",
+        have_description: true,
         have_size_selector: true
     },
     {
@@ -179,6 +191,7 @@ const arrPizza = [
         description_of_weight_big: "Большая пицца",
         description_of_weight_small: "Маленькая пицца",
         metrics: "гр.",
+        have_description: true,
         have_size_selector: true
     },
     {
@@ -192,6 +205,7 @@ const arrPizza = [
         description_of_weight_big: "Большая пицца",
         description_of_weight_small: "Маленькая пицца",
         metrics: "гр.",
+        have_description: true,
         have_size_selector: true
     }, {
         id: 20004,
@@ -204,6 +218,7 @@ const arrPizza = [
         description_of_weight_big: "Большая пицца",
         description_of_weight_small: "Маленькая пицца",
         metrics: "гр.",
+        have_description: true,
         have_size_selector: true
     }
 ];
@@ -222,6 +237,7 @@ const arrHotMeals = [
         description_of_weight_big: "Большая порция",
         description_of_weight_small: "Маленькая порция",
         metrics: "гр.",
+        have_description: true,
         have_size_selector: true
     },
     {
@@ -237,6 +253,7 @@ const arrHotMeals = [
         description_of_weight_big: "Большая порция",
         description_of_weight_small: "Маленькая порция",
         metrics: "гр.",
+        have_description: true,
         have_size_selector: true
     },
     {
@@ -253,6 +270,7 @@ const arrHotMeals = [
         description_of_weight_small: "Маленькая порция с картошкой 🥔",
         special_card: true,
         metrics: "гр.",
+        have_description: true,
         have_size_selector: true
     },
     {
@@ -269,6 +287,7 @@ const arrHotMeals = [
         description_of_weight_small: "Маленькая порция с капустой 🥦",
         special_card: true,
         metrics: "гр.",
+        have_description: true,
         have_size_selector: true
     },
     {
@@ -285,6 +304,7 @@ const arrHotMeals = [
         description_of_weight_small: "Маленькая порция с вишней 🍒",
         special_card: true,
         metrics: "гр.",
+        have_description: true,
         have_size_selector: true
     },
     {
@@ -301,11 +321,12 @@ const arrHotMeals = [
         description_of_weight_small: "Маленькая порция с творогом 🍚",
         special_card: true,
         metrics: "гр.",
+        have_description: true,
         have_size_selector: true
     }
 ];
 
-arrGrill = [
+const arrGrill = [
     {
         id: 40001,
         name: "Курочка Гриль",
@@ -316,6 +337,7 @@ arrGrill = [
         weight_big: "1",
         description_of_weight_big: "",
         metrics: "шт.",
+        have_description: true,
         have_size_selector: false
     },
     {
@@ -328,6 +350,174 @@ arrGrill = [
         weight_big: "1",
         description_of_weight_big: "",
         metrics: "шт.",
+        have_description: true,
         have_size_selector: false
+    }
+];
+
+const arrDrinks = [
+    {
+        id: 50001,
+        name: "Coca-cola",
+        picture: "picture/drinks/Coca-cola.jpg",
+        description: "",
+        have_small: true,
+        price_big: "100",
+        price_small: "50",
+        weight_big: "1",
+        weight_small: "0.5",
+        description_of_weight_big: "",
+        description_of_weight_small: "",
+        special_card: false,
+        metrics: "л.",
+        have_description: false,
+        have_size_selector: true
+    },
+    {
+        id: 50002,
+        name: "Coca-cola Zero",
+        picture: "picture/drinks/coca-cola_Zero.jpg",
+        description: "",
+        have_small: true,
+        price_big: "100",
+        price_small: "50",
+        weight_big: "1",
+        weight_small: "0.5",
+        description_of_weight_big: "",
+        description_of_weight_small: "",
+        special_card: false,
+        metrics: "л.",
+        have_description: false,
+        have_size_selector: true
+    },
+    {
+        id: 50003,
+        name: "Fanta",
+        picture: "picture/drinks/Fanta.jpg",
+        description: "",
+        have_small: true,
+        price_big: "100",
+        price_small: "50",
+        weight_big: "1",
+        weight_small: "0.5",
+        description_of_weight_big: "",
+        description_of_weight_small: "",
+        special_card: false,
+        metrics: "л.",
+        have_description: false,
+        have_size_selector: true
+    },
+    {
+        id: 50004,
+        name: "Fanta",
+        picture: "picture/drinks/Sprite.jpg",
+        description: "",
+        have_small: true,
+        price_big: "100",
+        price_small: "50",
+        weight_big: "1",
+        weight_small: "0.5",
+        description_of_weight_big: "",
+        description_of_weight_small: "",
+        special_card: false,
+        metrics: "л.",
+        have_description: false,
+        have_size_selector: true
+    },
+    {
+        id: 50005,
+        name: "BonAqua негаз.",
+        picture: "picture/drinks/BonAqua_негаз..jpg",
+        description: "",
+        have_small: true,
+        price_big: "80",
+        price_small: "40",
+        weight_big: "1",
+        weight_small: "0.5",
+        description_of_weight_big: "",
+        description_of_weight_small: "",
+        special_card: false,
+        metrics: "л.",
+        have_description: false,
+        have_size_selector: true
+    },
+    {
+        id: 50006,
+        name: "Fuzetea Зеленый с манго и ромашкой",
+        picture: "picture/drinks/Fuzetea_green.jpg",
+        description: "",
+        have_small: true,
+        price_big: "120",
+        price_small: "60",
+        weight_big: "1",
+        weight_small: "0.5",
+        description_of_weight_big: "",
+        description_of_weight_small: "",
+        special_card: false,
+        metrics: "л.",
+        have_description: false,
+        have_size_selector: true
+    },
+    {
+        id: 50007,
+        name: "Fuzetea Черный с лимоном и лемонграссом",
+        picture: "picture/drinks/Fuzetea_lemon.jpg",
+        description: "",
+        have_small: true,
+        price_big: "120",
+        price_small: "60",
+        weight_big: "1",
+        weight_small: "0.5",
+        description_of_weight_big: "",
+        description_of_weight_small: "",
+        special_card: false,
+        metrics: "л.",
+        have_description: false,
+        have_size_selector: true
+    },
+    {
+        id: 50008,
+        name: "Сок Rich Апельсин",
+        picture: "picture/drinks/Rich_orange.jpg",
+        description: "",
+        have_small: false,
+        price_big: "150",
+        weight_big: "1",
+        description_of_weight_big: "",
+        description_of_weight_small: "",
+        special_card: false,
+        metrics: "л.",
+        have_description: false,
+        have_size_selector: true
+    },
+    {
+        id: 50009,
+        name: "Сок Rich Вишня",
+        picture: "picture/drinks/Rich_cherry.jpg",
+        description: "",
+        have_small: false,
+        price_big: "150",
+        weight_big: "1",
+        description_of_weight_big: "",
+        description_of_weight_small: "",
+        special_card: false,
+        metrics: "л.",
+        have_description: false,
+        have_size_selector: true
+    },
+    {
+        id: 50010,
+        name: "Сок Rich Яблоко",
+        picture: "picture/drinks/Rich_apple.jpg",
+        description: "",
+        have_small: false,
+        price_big: "150",
+        weight_big: "1",
+        description_of_weight_big: "",
+        description_of_weight_small: "",
+        special_card: false,
+        metrics: "л.",
+        have_description: false,
+        have_size_selector: true
     }
 ];

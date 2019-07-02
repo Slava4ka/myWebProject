@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57b070c3-34cf-4df0-b9a8-49079ea26d5b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/lineCartCreation.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/lineCartCreation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/tempData.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/tempData.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,65 +20,32 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/lineCartCreation.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
-              <folding>
-                <element signature="e#333#339#1" expanded="true" />
-                <element signature="e#565#571#1" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="e#291#297#1" expanded="true" />
-                <element signature="e#746#752#0" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="e#2302#2308#0" expanded="true" />
-                <element signature="e#2544#2550#0" expanded="true" />
-                <element signature="e#3367#3373#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="821">
-              <caret line="176" column="30" lean-forward="true" selection-start-line="176" selection-start-column="30" selection-end-line="176" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/tempData.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="318" column="33" selection-start-line="318" selection-start-column="33" selection-end-line="318" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/stringСreation.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1071">
-              <caret line="99" column="80" selection-start-line="99" selection-start-column="80" selection-end-line="99" selection-end-column="80" />
+            <state relative-caret-position="544">
+              <caret line="246" column="31" selection-start-line="246" selection-start-column="31" selection-end-line="246" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/stringСreation.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="220" column="9" selection-start-line="220" selection-start-column="9" selection-end-line="220" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="212" column="24" lean-forward="true" selection-start-line="212" selection-start-column="24" selection-end-line="212" selection-end-column="24" />
+            <state relative-caret-position="374">
+              <caret line="210" column="31" lean-forward="true" selection-start-line="210" selection-start-column="31" selection-end-line="210" selection-end-column="31" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#1614#1620#0" expanded="true" />
-                <element signature="e#1820#1826#0" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="e#2759#2765#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,7 +64,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>chec</find>
       <find>cart-tota</find>
       <find>data-ar</find>
       <find>drop</find>
@@ -124,6 +93,7 @@
       <find>hotMealLineCart</find>
       <find>гр</find>
       <find>case</find>
+      <find>toCard</find>
     </findStrings>
     <replaceStrings>
       <replace>arr</replace>
@@ -154,10 +124,10 @@
         <option value="$PROJECT_DIR$/css/type_of_product__chooser.css" />
         <option value="$PROJECT_DIR$/css/type_of_product_ingredients__chooser.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/stringСreation.js" />
         <option value="$PROJECT_DIR$/js/scripts.js" />
-        <option value="$PROJECT_DIR$/js/tempData.js" />
         <option value="$PROJECT_DIR$/js/lineCartCreation.js" />
+        <option value="$PROJECT_DIR$/js/tempData.js" />
+        <option value="$PROJECT_DIR$/js/stringСreation.js" />
       </list>
     </option>
   </component>
@@ -195,7 +165,7 @@
               <item name="store" type="b2602c69:ProjectViewProjectNode" />
               <item name="store" type="462c0819:PsiDirectoryNode" />
               <item name="picture" type="462c0819:PsiDirectoryNode" />
-              <item name="grill" type="462c0819:PsiDirectoryNode" />
+              <item name="drinks" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -262,12 +232,12 @@
       <workItem from="1560448842670" duration="27321000" />
       <workItem from="1560857998262" duration="62930000" />
       <workItem from="1561461716375" duration="60979000" />
-      <workItem from="1562076290113" duration="9839000" />
+      <workItem from="1562076290113" duration="14743000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222190000" />
+    <option name="totallyTimeSpent" value="227094000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -510,31 +480,17 @@
     <entry file="file://$PROJECT_DIR$/picture/grill/chicken wings.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="821">
-          <caret line="176" column="30" lean-forward="true" selection-start-line="176" selection-start-column="30" selection-end-line="176" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/tempData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="318" column="33" selection-start-line="318" selection-start-column="33" selection-end-line="318" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/stringСreation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="99" column="80" selection-start-line="99" selection-start-column="80" selection-end-line="99" selection-end-column="80" />
+        <state relative-caret-position="991">
+          <caret line="494" column="29" selection-start-line="494" selection-start-column="29" selection-end-line="494" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/lineCartCreation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+        <state relative-caret-position="493">
+          <caret line="47" column="50" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
           <folding>
             <element signature="e#333#339#1" expanded="true" />
             <element signature="e#565#571#1" expanded="true" />
@@ -551,17 +507,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="212" column="24" lean-forward="true" selection-start-line="212" selection-start-column="24" selection-end-line="212" selection-end-column="24" />
+        <state relative-caret-position="374">
+          <caret line="210" column="31" lean-forward="true" selection-start-line="210" selection-start-column="31" selection-end-line="210" selection-end-column="31" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#1614#1620#0" expanded="true" />
-            <element signature="e#1820#1826#0" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#2759#2765#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="246" column="31" selection-start-line="246" selection-start-column="31" selection-end-line="246" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/stringСreation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="220" column="9" selection-start-line="220" selection-start-column="9" selection-end-line="220" selection-end-column="9" />
         </state>
       </provider>
     </entry>

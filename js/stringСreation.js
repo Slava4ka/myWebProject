@@ -136,7 +136,7 @@ function plusGoods(address) {
     console.log("id = " + id + " diameter = " + diameter);
 
     let size = '';
-    if (diameter == 280 || diameter == 500) {
+    if (diameter == 280 || diameter == 500 || diameter == 0.5) {
         size = 'small';
     } else {
         size = 'big';
@@ -179,7 +179,7 @@ function minusGoods(address) {
     console.log("id = " + id + " diameter = " + diameter);
 
     let size = '';
-    if (diameter == 280 || diameter == 500) {
+    if (diameter == 280 || diameter == 500 || diameter == 0.5) {
         size = 'small';
     } else {
         size = 'big';
@@ -221,13 +221,15 @@ function minusGoods(address) {
 function throwTrash(address) {
 // удалить позицию с корзины
 // т.к у всех элементов уникальные классы стоит ли заменить такой длинный селектор на closest
+// если все время выбивается больной пирог срабатывает else и в корзину добаляется большой
+
     const id = $(address).parent().parent().siblings('.col-lg-6').attr('data-art');
     const diameter = $(address).parent().parent().siblings('.col-lg-6').children('.size').attr('data-art');
 
     console.log("id = " + id + " diameter = " + diameter);
 
     let size = '';
-    if (diameter == 280 || diameter == 500) {
+    if (diameter == 280 || diameter == 500 || diameter == 0.5) {
         size = 'small';
     } else {
         size = 'big';
