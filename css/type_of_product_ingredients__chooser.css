@@ -1,0 +1,39 @@
+.product_ingredients__chooser {
+    position: relative;
+    display: flex;
+    margin: 0 0 16px;
+    padding: 0;
+    background-color: #f1f2f5;
+    border-radius: 100px;
+}
+
+.product_ingredients-selector {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    width: 25%;
+    height: 100%;
+    transition: -webkit-transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out;
+    background-color: #fff;
+    border: 1px solid #babfd0;
+    border-radius: 100px;
+}
+
+.product_ingredients-item {
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+    border-radius: 100px;
+    border: 1px solid transparent;
+    height: 38px;
+    width: 100%;
+    color: rgba(55, 53, 53, .7);
+    font-size: 12px;
+    line-height: 26px;
+    font-family: Dodo Medium, Helvetica, Arial, sans-serif;
+    text-align: center;
+    transition: color .2s ease-out;
+}

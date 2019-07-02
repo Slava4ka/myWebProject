@@ -176,9 +176,7 @@ const arrPizza = [
             description_of_weight_big: "Большая пицца",
             description_of_weight_small: "Маленькая пицца"
         }
-
-    ]
-;
+    ];
 
 const arrHotMeals = [
     {
@@ -211,13 +209,56 @@ const arrHotMeals = [
         id: 30003,
         name: "Вареники",
         picture: "picture/hot_meals/vareniki.png",
-        description: "Тесто фирменное, свиноговяжий фарш",
+        description: "Вареники с картошкой",
         have_small: true,
         price_big: "350",
         price_small: "175",
         weight_big: "1000",
         weight_small: "500",
-        description_of_weight_big: "Большая порция",
-        description_of_weight_small: "Маленькая порция"
+        description_of_weight_big: "Большая порция с картошкой",
+        description_of_weight_small: "Маленькая порция с картошкой",
+        special_card: true
+    },
+    {
+        id: 30004,
+        name: "Вареники",
+        picture: "picture/hot_meals/vareniki.png",
+        description: "Вареники с капустой",
+        have_small: true,
+        price_big: "350",
+        price_small: "175",
+        weight_big: "1000",
+        weight_small: "500",
+        description_of_weight_big: "Большая порция с капустой",
+        description_of_weight_small: "Маленькая порция с капустой",
+        special_card: true
+    },
+    {
+        id: 30005,
+        name: "Вареники",
+        picture: "picture/hot_meals/vareniki.png",
+        description: "Вареники с вишней",
+        have_small: true,
+        price_big: "350",
+        price_small: "175",
+        weight_big: "1000",
+        weight_small: "500",
+        description_of_weight_big: "Большая порция с вишней",
+        description_of_weight_small: "Маленькая порция с вишней",
+        special_card: true
+    },
+    {
+        id: 30006,
+        name: "Вареники",
+        picture: "picture/hot_meals/vareniki.png",
+        description: "Вареники с творогом",
+        have_small: true,
+        price_big: "350",
+        price_small: "175",
+        weight_big: "1000",
+        weight_small: "500",
+        description_of_weight_big: "Большая порция с творогом",
+        description_of_weight_small: "Маленькая порция с творогом",
+        special_card: true
     }
 ];

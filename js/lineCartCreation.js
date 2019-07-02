@@ -12,11 +12,13 @@ function createPizzaLineCart() {
 
 function createHotMealLineCart() {
     for (let i = 0; i < arrHotMeals.length; i++) {
-        $("#hotMealLineCart").append(lineCartConstructor(i, arrHotMeals));
+        $("#hotMealLineCart").append(HotMealLineCartConstructor(i, arrHotMeals));
     }
+    $("#hotMealLineCart").append(addSpecialCard(arrHotMeals));
 }
 
 function lineCartConstructor(iterator, arr) {
+
     const head = "<div class=\"col-lg-3 col-md-6 md-4 mb-4\">\n" +
         "                    <div class=\"card border-0\">\n" +
         "                        <div class=\"view overlay\">\n";
@@ -33,6 +35,7 @@ function lineCartConstructor(iterator, arr) {
         "                            </div>\n";
 
     let sizeControlSelector = "";
+
     if (arr[iterator].have_small) {
         sizeControlSelector = "                            <div class=\"product__size-control\">\n" +
             "                                <div class=\"product__size-control-selector\"></div>\n" +
@@ -75,4 +78,97 @@ function lineCartConstructor(iterator, arr) {
         "                </div>";
 
     return head + description + sizeControlSelector + inCardANDprice + footer
+}
+
+/**
+ * @return {string}
+ */
+// выводит все горячие блюда, кроме вареников (со специальной карточкой), своеобразный фильтр
+function HotMealLineCartConstructor(iterator, arr) {
+    switch (arr[iterator].special_card) {
+        case false:
+            console.log("in HMLCC false");
+            return '';
+        case true:
+            console.log("in HMLCC true");
+            return '';
+        default:
+            console.log("in HMLCC default");
+            return lineCartConstructor(iterator, arr);
+    }
+}
+
+// возвращает специальную карточку с селектором начинки вареников
+function addSpecialCard(arr) {
+    return "<div class=\"col-lg-3 col-md-6 md-4 mb-4\">\n" +
+        "                    <div class=\"card border-0\">\n" +
+        "                        <div class=\"view overlay\">\n" +
+        "\n" +
+        "\n" +
+        "                            <img class=\"card-img-top\"\n" +
+        "                                 src=\"" + arr[2].picture + "\"\n" +
+        "                                 alt=\"example\">\n" +
+        "                            <div class=\"text-left\"><i class=\"fas fa-info-circle\"></i></div>\n" +
+        "                        </div>\n" +
+        "                        <div class=\"card-body text-center pt-3\">\n" +
+        "                            <h4 class=\"good_name\">" + arr[2].name + "</h4>\n" +
+        "                            <div class=\"good_info\" style='height: 45px'>\n" +
+        "                                <h6>\n" +
+        "                                    <a class=\"dark-grey-text\">" + arr[2].description + "</a>\n" +
+        "                                </h6>\n" +
+        "                            </div>\n" +
+        "\n" +
+        "\n" +
+        "                            <div class=\"product_ingredients__chooser\">\n" +
+        "                                <div class=\"product_ingredients-selector\"></div>\n" +
+        "\n" +
+        "                                <div class=\"product_ingredients-item active\" value=\"potato\" data-art=\"30003\">\n" +
+        "                                    <h5 class=\"selected_item mt-1\">🥔</h5>\n" +
+        "                                </div>\n" +
+        "\n" +
+        "                                <div class=\"product_ingredients-item\" value=\"cabbage\" data-art=\"30004\">\n" +
+        "                                    <h5 class=\"not_selected_item mt-2\">🥦</h5>\n" +
+        "                                </div>\n" +
+        "\n" +
+        "                                <div class=\"product_ingredients-item\" value=\"cherry\" data-art=\"30005\">\n" +
+        "                                    <h5 class=\"not_selected_item mt-2\">🍒</h5>\n" +
+        "                                </div>\n" +
+        "\n" +
+        "                                <div class=\"product_ingredients-item\" value=\"curd\" data-art=\"30006\">\n" +
+        "                                    <h5 class=\"not_selected_item mt-2\">🍚</h5>\n" +
+        "                                </div>\n" +
+        "                            </div>\n" +
+        "\n" +
+        "\n" +
+        "                            <div class=\"product__size-control\">\n" +
+        "                                <div class=\"product__size-control-selector\"></div>\n" +
+        "                                <div class=\"product__size-control-item active\" value=\"big\" data-art=\"30003\">\n" +
+        "                                    <h5 class=\"selected_item mt-1\">1000&nbsp;гр</h5>\n" +
+        "                                </div>\n" +
+        "                                <div class=\"product__size-control-item\" value=\"small\" data-art=\"30003\">\n" +
+        "                                    <h5 class=\"not_selected_item mt-2\">500&nbsp;гр</h5>\n" +
+        "                                </div>\n" +
+        "                            </div>\n" +
+        "\n" +
+        "\n" +
+        "                            <div class=\"row d-flex justify-content-between align-items-center button-and-price\">\n" +
+        "                                <div class=\"col-5\">\n" +
+        "                                    <h4 class=\"font-weight-bold blue-text price\">\n" +
+        "                                        <strong class='strong_price'>350₽</strong>\n" +
+        "                                    </h4>\n" +
+        "                                </div>\n" +
+        "\n" +
+        "                                <div class=\"col-7\">\n" +
+        "                                    <button type=\"button\" class=\"btn btn-outline-warning btn-tb add-to-cart\"\n" +
+        "                                            data-art=\"30003\">\n" +
+        "                        <span>\n" +
+        "                            <strong>В&nbsp;корзину</strong>\n" +
+        "                        </span>\n" +
+        "                                    </button>\n" +
+        "                                </div>\n" +
+        "                            </div>\n" +
+        "\n" +
+        "                        </div>\n" +
+        "                    </div>\n" +
+        "                </div>"
 }

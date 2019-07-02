@@ -47,7 +47,7 @@ $(document).ready(function () {
 
     });
 
-    // изменение бегунка с размером и цены
+// изменение бегунка с размером и цены
     $('.product__size-control-item').on('click', function () {
         // переключение размера товара
         const i = $(this).parent().find('.product__size-control-item').index($(this));
@@ -56,6 +56,7 @@ $(document).ready(function () {
         console.log(i);
         console.log($(this).attr('value'));
 
+        // изменение цены
         const price_path = $(this).parent().siblings('.button-and-price').children('.col-5')
             .children('.price').children('.strong_price');
         const current_good = findByID($(this).attr('data-art'));
@@ -63,15 +64,15 @@ $(document).ready(function () {
 
         switch (i) {
             case 0:
-                price_path.html(current_good.price_big+"₽");
+                price_path.html(current_good.price_big + "₽");
                 break;
             case 1:
-                price_path.html(current_good.price_small+"₽");
+                price_path.html(current_good.price_small + "₽");
                 break;
             default:
                 alert("Index error")
         }
-
+// цену изменил
 
         const selector = $(this).parent().find('.product__size-control-selector');
         selector.css('transform', 'translateX(' + 100 * i + '%');
@@ -89,6 +90,8 @@ $(document).ready(function () {
 
     });
 
+    // изменения бегунка для выбора начинки вареников
+    ingredientsSelector();
 
     //выпадающее окно с корзиной
     instance = tippy('#cart', {
@@ -139,6 +142,9 @@ function getFromLS() {
 function addToCart() {
 // Добавляет товар в корзину
     let articul = $(this).attr('data-art');
+
+    console.log("$(this).attr('data-art') = " + $(this).attr('data-art'));
+
     let size = $(this).parent().parent().siblings('.product__size-control').find('.active').attr('value');
     if (articul !== undefined && size !== undefined) {
         let cart = getFromLS();
@@ -285,4 +291,56 @@ function makeReadbleMass() {
     } else {
         console.log("память пуста");
     }
+}
+
+// переключение ингредиентов, применяется  только на варениках
+// изменяет data-art у селектора размеров, цену
+function ingredientsSelector() {
+    $('.product_ingredients-item').on('click', function () {
+        const i = $(this).parent().find('.product_ingredients-item').index($(this));
+
+        const selector = $(this).parent().find('.product_ingredients-selector');
+        selector.css('transform', 'translateX(' + 100 * i + '%');
+        // 100 * 0 == 0, 100 * 1 == 100, 100 * 2 == 200 ... и можно без case.
+
+        $(this).addClass('active').siblings().removeClass('active');
+
+        $(this).parent().find('.product_ingredients-item').children().removeClass('not_selected_item mt-1 selected_item mt-2')
+            .addClass('not_selected_item mt-2');
+
+        $(this).find('h5').removeClass('not_selected_item mt-2').addClass('selected_item mt-1');
+
+        // текущая позиция
+        const current = findByID($(this).attr('data-art'));
+
+        //изменение описания
+        $(this).parent().siblings('.good_info').find('.dark-grey-text').html(current.description);
+
+        //изменение data-art на селекторе размеров
+        $(this).parent().siblings('.product__size-control').children('.product__size-control-item')
+            .attr('data-art', current.id);
+
+        //изменение data-art на кнопке "в корзину"
+        $(this).parent().siblings('.button-and-price').find('.add-to-cart')
+            .attr('data-art', current.id);
+
+        // изменение цены
+        const active_size = $(this).parent().siblings('.product__size-control').find('.active');
+
+        const active_index = $(this).parent().siblings('.product__size-control')
+            .find('.product__size-control-item').index(active_size);
+
+        const price_path = $(this).parent().siblings('.button-and-price').find('.strong_price');
+
+        switch (active_index) {
+            case 0:
+                price_path.html(current.price_big + "₽");
+                break;
+            case 1:
+                price_path.html(current.price_small + "₽");
+                break;
+            default:
+                alert("Index error")
+        }
+    });
 }

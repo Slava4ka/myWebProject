@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57b070c3-34cf-4df0-b9a8-49079ea26d5b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/css/type_of_product_ingredients__chooser.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/lineCartCreation.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/lineCartCreation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/stringСreation.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/stringСreation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/tempData.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/tempData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/currentCart.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/currentCart.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,90 +20,19 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/scripts.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="274" column="20" lean-forward="true" selection-start-line="274" selection-start-column="20" selection-end-line="274" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/stringСreation.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="23" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/lineCartCreation.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
-              <caret line="69" column="52" lean-forward="true" selection-start-line="69" selection-start-column="52" selection-end-line="69" selection-end-column="52" />
-              <folding>
-                <element signature="e#322#328#0" expanded="true" />
-                <element signature="e#545#551#0" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="e#72#78#0" expanded="true" />
-                <element signature="e#714#720#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/tempData.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="207" column="35" lean-forward="true" selection-start-line="207" selection-start-column="8" selection-end-line="207" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6">
-              <caret line="154" column="24" lean-forward="true" selection-start-line="154" selection-start-column="24" selection-end-line="154" selection-end-column="24" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#1614#1620#0" expanded="true" />
-                <element signature="e#1820#1826#0" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="e#2759#2765#0" expanded="true" />
-                <element signature="e#1614#1620#0" expanded="true" />
-                <element signature="e#1820#1826#0" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="e#2759#2765#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>make</find>
-      <find>readbleMass</find>
-      <find>pl</find>
-      <find>add-</find>
-      <find>total</find>
       <find>getFromLS</find>
       <find>cons</find>
       <find>chec</find>
@@ -127,6 +58,11 @@
       <find>button-a</find>
       <find>infi</find>
       <find>size</find>
+      <find>price_</find>
+      <find>зкщв</find>
+      <find>add-to-cart</find>
+      <find>special_card: false</find>
+      <find>hotMealLineCart</find>
     </findStrings>
     <replaceStrings>
       <replace>arr</replace>
@@ -147,22 +83,24 @@
         <option value="$PROJECT_DIR$/test/tippleCart.js" />
         <option value="$PROJECT_DIR$/test/tippleCart.css" />
         <option value="$PROJECT_DIR$/css/tippleCart.css" />
-        <option value="$PROJECT_DIR$/test/currentCart.html" />
         <option value="$PROJECT_DIR$/test/test tipple cart.html" />
         <option value="$PROJECT_DIR$/js/scripsList.txt" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/css/style_for_product__size-control.css" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/js/stringСreation.js" />
+        <option value="$PROJECT_DIR$/test/currentCart.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/css/type_of_product__chooser.css" />
+        <option value="$PROJECT_DIR$/css/type_of_product_ingredients__chooser.css" />
+        <option value="$PROJECT_DIR$/js/scripts.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/lineCartCreation.js" />
         <option value="$PROJECT_DIR$/js/tempData.js" />
-        <option value="$PROJECT_DIR$/js/scripts.js" />
-        <option value="$PROJECT_DIR$/js/stringСreation.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1491" />
+    <option name="x" value="-1473" />
     <option name="y" value="-126" />
     <option name="width" value="1304" />
     <option name="height" value="766" />
@@ -180,6 +118,11 @@
             <path>
               <item name="store" type="b2602c69:ProjectViewProjectNode" />
               <item name="store" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="store" type="b2602c69:ProjectViewProjectNode" />
@@ -249,12 +192,13 @@
       <workItem from="1560368929188" duration="10578000" />
       <workItem from="1560448842670" duration="27321000" />
       <workItem from="1560857998262" duration="62930000" />
-      <workItem from="1561461716375" duration="48662000" />
+      <workItem from="1561461716375" duration="60979000" />
+      <workItem from="1562076290113" duration="4492000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="200034000" />
+    <option name="totallyTimeSpent" value="216843000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -267,9 +211,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1688" y="-126" width="1696" height="1036" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24004824" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24004824" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -281,7 +224,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32890365" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32779622" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.45404208" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.45071983" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -410,31 +353,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/currentCart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
-          <folding>
-            <element signature="e#1166#1172#0" expanded="true" />
-            <element signature="e#1333#1339#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/tippleCart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test tipple cart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="65" column="30" lean-forward="true" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -468,24 +390,97 @@
     <entry file="file://$PROJECT_DIR$/picture/pies/000_without_background.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/stringСreation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/currentCart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="821">
+          <caret line="115" column="6" selection-start-line="115" selection-start-column="6" selection-end-line="115" selection-end-column="6" />
+          <folding>
+            <element signature="e#1166#1172#0" expanded="true" />
+            <element signature="e#1333#1339#0" expanded="true" />
+            <element signature="e#3498#3504#0" expanded="true" />
+            <element signature="e#3729#3735#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+        <state relative-caret-position="450">
+          <caret line="88" column="1" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style_for_product__size-control.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/type_of_product_ingredients__chooser.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="305" column="68" selection-start-line="305" selection-start-column="68" selection-end-line="305" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test tipple cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="63" column="38" lean-forward="true" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/lineCartCreation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="108" column="66" selection-start-line="108" selection-start-column="66" selection-end-line="108" selection-end-column="66" />
+          <folding>
+            <element signature="n#!!block;n#lineCartConstructor#0" />
+            <element signature="e#336#342#0" expanded="true" />
+            <element signature="e#573#579#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#358#364#0" expanded="true" />
+            <element signature="e#746#752#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#2048#2054#0" expanded="true" />
+            <element signature="e#2290#2296#0" expanded="true" />
+            <element signature="e#3113#3119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/tempData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="218" column="66" selection-start-line="218" selection-start-column="66" selection-end-line="218" selection-end-column="66" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="154" column="24" lean-forward="true" selection-start-line="154" selection-start-column="24" selection-end-line="154" selection-end-column="24" />
+        <state relative-caret-position="305">
+          <caret line="189" column="36" selection-start-line="189" selection-start-column="36" selection-end-line="189" selection-end-column="36" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -494,46 +489,7 @@
             <element signature="e#1820#1826#0" expanded="true" />
             <element signature="n#style#0;n#button#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="e#2759#2765#0" expanded="true" />
-            <element signature="e#1614#1620#0" expanded="true" />
-            <element signature="e#1820#1826#0" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#2759#2765#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/tempData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="207" column="35" lean-forward="true" selection-start-line="207" selection-start-column="8" selection-end-line="207" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/lineCartCreation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="69" column="52" lean-forward="true" selection-start-line="69" selection-start-column="52" selection-end-line="69" selection-end-column="52" />
-          <folding>
-            <element signature="e#322#328#0" expanded="true" />
-            <element signature="e#545#551#0" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#72#78#0" expanded="true" />
-            <element signature="e#714#720#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="274" column="20" lean-forward="true" selection-start-line="274" selection-start-column="20" selection-end-line="274" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/stringСreation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="23" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="23" />
         </state>
       </provider>
     </entry>
