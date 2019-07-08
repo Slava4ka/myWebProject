@@ -110,6 +110,7 @@ function lineCartConstructor(iterator, arr) {
  * @return {string}
  */
 // выводит все горячие блюда, кроме вареников (со специальной карточкой), своеобразный фильтр
+// все блюда без специальной карточки попадают в default
 function HotMealLineCartConstructor(iterator, arr) {
     switch (arr[iterator].special_card) {
         case false:

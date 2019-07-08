@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Material Design Bootstrap</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style_for_product__size-control.css" rel="stylesheet">
+    <link href="css/type_of_product_ingredients__chooser.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/basket.css" rel="stylesheet">
+    <!-- вместо tippy.css -->
+
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@4/themes/light-border.css"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+</head>
+<body id="top" class="d-flex flex-column h-100">
+
+<header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light white scrolling-navbar">
+        <div id="logo" class="container">
+            <a href="#top" class="navbar-brand waves-effect anchor">
+                <img class="nav_logo wow jackInTheBox" src="picture/navv_logo.png" alt="">
+            </a>
+
+            <ul class="navbar-nav nav-flex-icons">
+
+                <li class="nav-item pr-5">
+                    <h6 id="basket">Корзина</h6>
+                </li>
+
+                <li class="nav-item pr-5">
+                    <h6 id="registration">Оформление</h6>
+                </li>
+
+                <li class="nav-item">
+                    <h6 id="done">Заказ принят</h6>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar-->
+
+</header>
+
+<!-- Begin page content -->
+<main role="main" class="flex-shrink-0 mt-5">
+
+
+    <div class="container">
+
+
+        <!-- -->
+
+        <div class="card-body">
+
+            <div id="shopping-basket">
+                <h1>Корзина</h1>
+            </div>
+
+
+            <hr>
+
+            <!-- PRODUCT -->
+            <div id="shopping-list">
+                <h1>Ваша корзина пуста</h1>
+            </div>
+            <!-- END PRODUCT -->
+
+            <hr>
+
+            <div class="container p-3">
+                <div class="row">
+                    <div class="col-7"></div>
+                    <div class="col-3 pt-1 text-right">
+                        <h4 style="">Сумма заказа:</h4>
+                    </div>
+                    <div class="col-2 text-info">
+                        <h3 id="totalPrice" class="text-bold"></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row buttons">
+                    <div class="col-md-1"></div>
+                    <div class="col-12 col-md-4 text-center">
+                        <button type="button" class="btn btn-lg back-to-menu">
+                            <h5>Вернуться в меню</h5>
+                        </button>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-12 col-md-4 text-center">
+                        <button type="button" class="btn btn-lg to-order">
+                            <h5 class="text-bold">Заказать</h5>
+                        </button>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+
+        </div>
+        <!-- -->
+
+
+    </div>
+</main>
+
+<footer class="footer mt-auto py-3">
+    <div class="container">
+        <span class="text-muted text-right">
+        <h6 id="footer_text">
+            nam3piroga@mail.ru
+        </h6>
+        </span>
+    </div>
+</footer>
+
+<script type="text/javascript" src="js/tempData.js"></script>
+<script type="text/javascript" src="js/my_scripts/general/data_service.js"></script>
+<script type="text/javascript" src="js/my_scripts/general/localStorage_service.js"></script>
+
+<script type="text/javascript" src="js/my_scripts/general/data_service.js"></script>
+<script type="text/javascript" src="js/my_scripts/special/shopping_basket/basketLineCreation.js"></script>
+<script type="text/javascript" src="js/my_scripts/special/shopping_basket/shopping-basket.js"></script>
+<script type="text/javascript" src="js/my_scripts/special/shopping_basket/basketOnClick.js"></script>
+
+<script type="text/javascript" src="js/modules/wow.js"></script>
+<script>//WOW().init();</script>
+
+
+<script src="https://unpkg.com/popper.js@1"></script>
+<script src="https://unpkg.com/tippy.js@4"></script>
+
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+</html>

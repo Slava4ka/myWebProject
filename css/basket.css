@@ -1,0 +1,98 @@
+/*footer*/
+
+main > .container {
+    padding: 20px 15px 0;
+}
+
+.footer {
+    background-color: #757f95;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+code {
+    font-size: 80%;
+}
+
+#footer_text{
+    color: white;
+}
+
+
+/* мои */
+
+#basket {
+    color: black;
+}
+
+#registration, #done {
+    color: grey;
+}
+
+.size {
+    text-align: left;
+    color: #C2C2DC;
+}
+
+.cross-in-a-circle {
+    border: none;
+    background: transparent;
+}
+
+.back-to-menu {
+    border: 1px solid grey;
+    border-radius: 25px;
+    width: 290px;
+    height: 61px;
+}
+
+.to-order {
+    border-radius: 25px;
+    background: #ffbb33;
+    color: white;
+    width: 290px;
+    height: 61px;
+}
+
+.cross-in-a-circle {
+    color: grey;
+}
+
+.count {
+    text-align: left;
+}
+
+.trash {
+    text-align: left;
+}
+
+.name-value {
+    color: black
+}
+
+.cart-detail-img img {
+    width: 100%;
+    height: auto;
+    padding-left: 5px;
+}
+
+.goods-price {
+    text-align: center;
+}
+
+.progress_block {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+}
+
+.text-bold {
+    font-weight: bold;
+}
