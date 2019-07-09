@@ -68,12 +68,12 @@ function makeTippy(totalQuantity, totalPrice, readableMass) {
         '                            <h6>Сумма заказа:</h6>\n' +
         '                        </div>\n' +
         '                    </div>\n' +
-        '                    <div class="col-lg-4 col-sm-4 col-4 p-0 div-of-totalPrice">\n' +
+        '                    <div class="col-lg-3 col-sm-3 col-3 p-0 div-of-totalPrice">\n' +
         '                        <div class="pt-4 pl-0 second-div-of-totalPrice">\n' +
         '                            <h6 class="text-info cart-total-price">' + totalPrice + '₽</h6>\n' +
         '                        </div>\n' +
         '                    </div>\n' +
-        '                    <div class="col-lg-3 col-sm-3 col-3 pt-3 pr-0 pl-0 ">\n' +
+        '                    <div class="col-lg-4 col-sm-4 col-4 pt-3 pr-0 pl-0 ">\n' +
         '                        <button type="button" class="btn btn-outline-warning btn-sm px-2" onclick="toCard()">В корзину\n' +
         '                        </button>\n' +
         '                    </div>\n' +
@@ -241,7 +241,7 @@ function throwTrash(address) {
 
 function toCard() {
 // перейти в корзину
-    alert("dropGoods");
+    document.location.href = "shopping_basket.html";
 }
 
 function dropGoods(id, size) {

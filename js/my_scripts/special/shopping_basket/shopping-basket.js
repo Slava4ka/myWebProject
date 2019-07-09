@@ -9,5 +9,14 @@ $(document).ready(function () {
 
     $('button.button-trash').on('click', buttonTrash);
 
+    $('button.back-to-menu').on('click', function () {
+        $(location).attr('href', 'index.html');
+    })
+
+    $('#logo').on('click', function () {
+        $(location).attr('href', 'index.html');
+    })
+
+
 
 });
