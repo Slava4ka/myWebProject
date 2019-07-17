@@ -4,51 +4,57 @@ function getListOfGoods() {
 
 
 function createShoppingList() {
-    let [totalQuantity, totalPrice, readableMass] = getListOfGoods();
 
     let tempOut = '';
 
-    if (!isEmpty(readableMass)) {
+    try {
+        let [totalQuantity, totalPrice, readableMass] = getListOfGoods();
 
-        const smallSize = readableMass['small'];
-        const bigSize = readableMass['big'];
+        if (!isEmpty(readableMass)) {
 
-        if (!isEmpty(smallSize)) {
-            for (let key in smallSize) {
-                tempOut += createBasketLine(
-                    smallSize[key].id,
-                    smallSize[key].name,
-                    smallSize[key].size_description,
-                    smallSize[key].weight,
-                    smallSize[key].metrics,
-                    smallSize[key].description,
-                    smallSize[key].price,
-                    smallSize[key].quantity
-                );
+            const smallSize = readableMass['small'];
+            const bigSize = readableMass['big'];
+
+            if (!isEmpty(smallSize)) {
+                for (let key in smallSize) {
+                    tempOut += createBasketLine(
+                        smallSize[key].id,
+                        smallSize[key].name,
+                        smallSize[key].size_description,
+                        smallSize[key].weight,
+                        smallSize[key].metrics,
+                        smallSize[key].description,
+                        smallSize[key].price,
+                        smallSize[key].quantity
+                    );
+                }
             }
-        }
 
-        if (!isEmpty(bigSize)) {
-            for (let key in bigSize) {
-                tempOut += createBasketLine(
-                    bigSize[key].id,
-                    bigSize[key].name,
-                    bigSize[key].size_description,
-                    bigSize[key].weight,
-                    bigSize[key].metrics,
-                    bigSize[key].description,
-                    bigSize[key].price,
-                    bigSize[key].quantity
-                );
+            if (!isEmpty(bigSize)) {
+                for (let key in bigSize) {
+                    tempOut += createBasketLine(
+                        bigSize[key].id,
+                        bigSize[key].name,
+                        bigSize[key].size_description,
+                        bigSize[key].weight,
+                        bigSize[key].metrics,
+                        bigSize[key].description,
+                        bigSize[key].price,
+                        bigSize[key].quantity
+                    );
+                }
             }
+            $('#totalPrice').html(totalPrice + "₽");
+        } else {
+            tempOut += '<h1>Ваша корзина пуста</h1>';
         }
-    } else {
-        tempOut += '<h1>Ваша корзина пуста</h1>';
+    } catch (e) {
+        console.log(e);
     }
 
 
     $('#shopping-list').empty().append(tempOut);
-    $('#totalPrice').html(totalPrice + "₽");
+
 }
 
 function createBasketLine(id, name, size, weight, metrics, description, price, quantity) {
@@ -70,13 +76,13 @@ function createBasketLine(id, name, size, weight, metrics, description, price, q
         '\n' +
         '                    <div class="col-12 col-md-6">\n' +
         '                        <div class="row">\n' +
-        '                            <div class="col-5 pt-3">\n' +
+        '                            <div class="col-4 col-md-5 pt-3">\n' +
         '                                <div class="goods-price">\n' +
         '                                    <h6><strong>' + price + '₽</strong></h6>\n' +
         '                                </div>\n' +
         '                            </div>\n' +
         '\n' +
-        '                            <div class="col-4">\n' +
+        '                            <div class="col-6 col-md-4">\n' +
         '                                <div class="count" data-art="' + id + '" data-size="' + weight + '" >\n' +
         '                                    <div class="minus d-inline-block">\n' +
         '                                        <button type="button" class="btn btn-outline-warning btn-sm px-1 button-minus"\n' +
@@ -96,7 +102,7 @@ function createBasketLine(id, name, size, weight, metrics, description, price, q
         '                                </div>\n' +
         '                            </div>\n' +
         '\n' +
-        '                            <div class="col-3 text-center p-1" data-art="' + id + '" data-size = "' + weight + '">\n' +
+        '                            <div class="col-2 col-md-3 text-center p-1" data-art="' + id + '" data-size = "' + weight + '">\n' +
         '                                <button type="button" class="cross-in-a-circle button-trash">\n' +
         '                                    <i class="far fa-times-circle fa-2x" aria-hidden="true"></i>\n' +
         '                                </button>\n' +
