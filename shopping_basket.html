@@ -131,7 +131,7 @@
 
 
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                        <h4 class="modal-title text-bold" id="deliveryModalLabel">Куда доставить?</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -142,7 +142,7 @@
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" id="home-tab" data-toggle="tab" href="#delivery" role="tab"
-                                   aria-controls="delivery" aria-selected="true">Delivery</a>
+                                   aria-controls="delivery" aria-selected="true">Доставка</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="profile-tab" data-toggle="tab" href="#pickup" role="tab"
@@ -155,38 +155,22 @@
                                 <!-- форма для доставки -->
 
                                 <form>
-                                    <div class="form-group">
-                                        <label for="recipient-name" class="col-form-label">Recipient:</label>
-                                        <input type="text" class="form-control" id="recipient-name">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="message-text" class="col-form-label">Message:</label>
-                                        <textarea class="form-control" id="message-text"></textarea>
-                                    </div>
-                                </form>
 
-
-                            </div>
-                            <div class="tab-pane fade pt-4" id="pickup" role="tabpanel" aria-labelledby="pickup-tab">
-                                <!-- Форма для самовывоза -->
-                                <form>
-                                    <div class="address text-center">
-                                        <label class="text-center"><h5>Адрес доставки</h5></label>
-                                    </div>
-                                    <div class="form-row">
+                                    <div class="form-row pt-3">
                                         <div class="form-group col-md-9">
                                             <input type="text" class="form-control" id="inputStreet"
-                                                   placeholder="Улица">
+                                                   placeholder="Улица" required>
                                         </div>
 
                                         <div class="form-group col-md-3">
-                                            <input type="text" class="form-control" id="inputHouse" placeholder="Дом">
+                                            <input type="text" class="form-control" id="inputHouse" placeholder="Дом"
+                                                   required>
                                         </div>
                                     </div>
 
                                     <div class="form-row">
 
-                                        <div class="form-group col-6 col-md-3">
+                                        <div class="form-grou   p col-6 col-md-3">
                                             <input type="text" class="form-control" id="inputApartment"
                                                    placeholder="Квартира">
                                         </div>
@@ -209,20 +193,39 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="comment">Comment:</label>
-                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                                        <textarea class="form-control" rows="5" id="comment"
+                                                  placeholder="Комментарий"></textarea>
                                     </div>
-
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-primary">
+                                            <h7 class="text-bold">Подтвердить адрес</h7>
+                                        </button>
+                                    </div>
                                 </form>
 
+
+                                <!-- форма для доставки -->
+                            </div>
+                            <div class="tab-pane fade pt-4" id="pickup" role="tabpanel" aria-labelledby="pickup-tab">
+                                <!-- Форма для самовывоза -->
+                                <div style="height: 150px">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="addressRadio"
+                                               id="address1" value="option1" checked>
+                                        <label class="form-check-label" for="address1">
+                                            пр-кт 40-летия победы 116А
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">
+                                        <h7 class="text-bold">Выбрать</h7>
+                                    </button>
+                                </div>
                                 <!-- Форма для самовывоза -->
                             </div>
                         </div>
 
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Send message</button>
                     </div>
 
 
